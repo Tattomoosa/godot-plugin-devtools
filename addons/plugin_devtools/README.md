@@ -16,7 +16,9 @@
 
 # Basic Overview
 
-Host of tools which aid with plugin development.
+Host of tools which aid with plugin development. Explore the editor, explore the editor theme, explore property info, load any Control.
+
+# Tools
 
 ## <img src="https://raw.githubusercontent.com/godotengine/godot/refs/heads/master/editor/icons/Theme.svg" width="18"/>&nbsp;&nbsp; Theme Explorer
 
@@ -63,26 +65,26 @@ internal classes.
 
 # My Godot Plugins
 
-### <img src="https://raw.githubusercontent.com/Tattomoosa/o2/refs/heads/main/addons/o%E2%82%82/assets/icons/o2.svg" width="18"/>&nbsp;&nbsp; [O₂](https://github.com/Tattomoosa/o2)
+## <img src="https://raw.githubusercontent.com/Tattomoosa/o2/refs/heads/main/addons/o%E2%82%82/assets/icons/o2.svg" width="18"/>&nbsp;&nbsp; [O₂](https://github.com/Tattomoosa/o2)
 
 The Plugin Suite that does the impossible
 
-### <img src="https://raw.githubusercontent.com/Tattomoosa/godot-plugin-devtools/refs/heads/main/addons/plugin_devtools/assets/icons/PluginDevTools.svg" width="18"/>&nbsp;&nbsp; [Plugin DevTools](https://github.com/Tattomoosa/godot-plugin-devtools)
+## <img src="https://raw.githubusercontent.com/Tattomoosa/godot-plugin-devtools/refs/heads/main/addons/plugin_devtools/assets/icons/PluginDevTools.svg" width="18"/>&nbsp;&nbsp; [Plugin DevTools](https://github.com/Tattomoosa/godot-plugin-devtools)
 
 Plugin development made easy
 
-### <img src="https://github.com/Tattomoosa/VisionCone3D/raw/main/addons/tattomoosa.vision_cone_3d/icons/VisionCone3D.svg" width="18"/>&nbsp;&nbsp; [VisionCone3D](https://github.com/Tattomoosa/VisionCone3D)
+## <img src="https://github.com/Tattomoosa/VisionCone3D/raw/main/addons/tattomoosa.vision_cone_3d/icons/VisionCone3D.svg" width="18"/>&nbsp;&nbsp; [VisionCone3D](https://github.com/Tattomoosa/VisionCone3D)
 
 Simple but configurable 3D vision cone node
 
-### <img src="https://github.com/Tattomoosa/Spinner/raw/main/addons/tattomoosa.spinner/icons/Spinner.svg" width="18"/>&nbsp;&nbsp; [Spinner](https://github.com/Tattomoosa/Spinner)
+## <img src="https://github.com/Tattomoosa/Spinner/raw/main/addons/tattomoosa.spinner/icons/Spinner.svg" width="18"/>&nbsp;&nbsp; [Spinner](https://github.com/Tattomoosa/Spinner)
 
 Simple but configurable process status indicator node
 
-### <img src="https://github.com/Tattomoosa/NetworkTextureRect/raw/main/addons/tattomoosa.network_texture_rect/icons/NetworkTextureRect.svg" width="18"/>&nbsp;&nbsp; [NetworkTextureRect](https://github.com/Tattomoosa/NetworkTextureRect)
+## <img src="https://github.com/Tattomoosa/NetworkTextureRect/raw/main/addons/tattomoosa.network_texture_rect/icons/NetworkTextureRect.svg" width="18"/>&nbsp;&nbsp; [NetworkTextureRect](https://github.com/Tattomoosa/NetworkTextureRect)
 
 Dead simple network images
 
-### <img src="https://raw.githubusercontent.com/Tattomoosa/gd-submodules/refs/heads/main/addons/gd-submodules/icons/GitPlugin.svg" width="18"/>&nbsp;&nbsp; [gd-submodules](https://github.com/Tattomoosa/gd-submodules) (unreleased, experimental)
+## <img src="https://raw.githubusercontent.com/Tattomoosa/gd-submodules/refs/heads/main/addons/gd-submodules/icons/GitPlugin.svg" width="18"/>&nbsp;&nbsp; [gd-submodules](https://github.com/Tattomoosa/gd-submodules) (unreleased, experimental)
 
-Dead simple plugin management via git submodule
+Plugin management via git submodule
