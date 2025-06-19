@@ -1,1 +1,1 @@
-./addons/plugin_devtools/README.md
+addons/plugin_devtools/README.md
