@@ -1,0 +1,128 @@
+[gd_scene load_steps=8 format=3 uid="uid://cek7ids6yldml"]
+
+[ext_resource type="Script" uid="uid://bdiy7eqm1bnty" path="res://addons/plugin_devtools/src/tools_dock/theme/EditorThemeTypeListPicker.gd" id="1_cxltf"]
+[ext_resource type="Script" uid="uid://esqxcw7d4l6a" path="res://addons/plugin_devtools/src/controls/CopyNotifier.gd" id="2_spu3f"]
+[ext_resource type="Script" uid="uid://bepnqbb46wygl" path="res://addons/plugin_devtools/src/controls/EditorStylesPanelContainer.gd" id="3_w35cm"]
+[ext_resource type="Script" uid="uid://cv76hxml18ciy" path="res://addons/plugin_devtools/src/tools_dock/theme/EditorThemeExplorerFontList.gd" id="4_s7xwe"]
+
+[sub_resource type="SVGTexture" id="SVGTexture_3w4ua"]
+_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"gray\" d=\"M1 1h14v4h-1a2 2 0 0 0-2-2H9v9a2 2 0 0 0 2 2v1H5v-1a2 2 0 0 0 2-2V3H4a2 2 0 0 0-2 2H1z\"/></svg>
+"
+saturation = 2.0
+color_map = {
+Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
+Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
+Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
+}
+
+[sub_resource type="SVGTexture" id="SVGTexture_cxltf"]
+_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"#e0e0e0\" d=\"M10.168 8.754a5 5 0 1 0-1.414 1.414l4.316 4.316 1.414-1.414zM6 3a3 3 0 0 1 0 6 3 3 0 0 1 0-6z\"/></svg>
+"
+base_scale = 2.0
+saturation = 2.0
+color_map = {
+Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
+Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
+Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
+}
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fi71u"]
+content_margin_left = 6.0
+content_margin_top = 6.0
+content_margin_right = 6.0
+content_margin_bottom = 6.0
+bg_color = Color(0.09068625, 0.09068625, 0.09068625, 1)
+corner_detail = 1
+anti_aliasing = false
+
+[node name="Fonts" type="VBoxContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_tab_index = 3
+metadata/icon = SubResource("SVGTexture_3w4ua")
+metadata/_edit_lock_ = true
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 2
+columns = 2
+
+[node name="LineEdit" type="LineEdit" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "Filter Color"
+right_icon = SubResource("SVGTexture_cxltf")
+
+[node name="OptionButton" type="OptionButton" parent="GridContainer"]
+layout_mode = 2
+selected = 0
+item_count = 13
+popup/item_0/text = "EditorFonts"
+popup/item_0/id = 0
+popup/item_1/text = "MainScreenButton"
+popup/item_1/id = 1
+popup/item_2/text = "Label"
+popup/item_2/id = 2
+popup/item_3/text = "HeaderSmall"
+popup/item_3/id = 3
+popup/item_4/text = "HeaderMedium"
+popup/item_4/id = 4
+popup/item_5/text = "HeaderLarge"
+popup/item_5/id = 5
+popup/item_6/text = "RichTextLabel"
+popup/item_6/id = 6
+popup/item_7/text = "FoldableContainer"
+popup/item_7/id = 7
+popup/item_8/text = "Window"
+popup/item_8/id = 8
+popup/item_9/text = "HeaderSmallLink"
+popup/item_9/id = 9
+popup/item_10/text = "TopBarOptionButton"
+popup/item_10/id = 10
+popup/item_11/text = "GraphStateMachine"
+popup/item_11/id = 11
+popup/item_12/text = "CodeEdit"
+popup/item_12/id = 12
+script = ExtResource("1_cxltf")
+type = 3
+
+[node name="Label" type="Label" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+clip_text = true
+text_overrun_behavior = 1
+
+[node name="Copied" type="TextureRect" parent="GridContainer"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 4
+stretch_mode = 5
+script = ExtResource("2_spu3f")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_fi71u")
+script = ExtResource("3_w35cm")
+panel_style = "Background"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="PanelContainer"]
+layout_mode = 2
+
+[node name="Fonts" type="HFlowContainer" parent="PanelContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+alignment = 1
+last_wrap_alignment = 1
+script = ExtResource("4_s7xwe")
+theme_type = "EditorFonts"
+
+[connection signal="text_changed" from="GridContainer/LineEdit" to="PanelContainer/ScrollContainer/Fonts" method="filter"]
+[connection signal="type_selected" from="GridContainer/OptionButton" to="PanelContainer/ScrollContainer/Fonts" method="set_theme_type"]
+[connection signal="button_pressed" from="PanelContainer/ScrollContainer/Fonts" to="GridContainer/Copied" method="show_and_fade"]
+[connection signal="mouse_hovered_button" from="PanelContainer/ScrollContainer/Fonts" to="GridContainer/Label" method="set_text"]

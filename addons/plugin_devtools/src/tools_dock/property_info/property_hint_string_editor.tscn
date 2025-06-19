@@ -1,0 +1,158 @@
+[gd_scene load_steps=4 format=3 uid="uid://cbt311jcdc3gy"]
+
+[ext_resource type="Script" uid="uid://bpuetbs6ltvsi" path="res://addons/plugin_devtools/src/tools_dock/property_info/RangeHintStringConstructor.gd" id="1_kcgci"]
+[ext_resource type="Script" uid="uid://b1gnhddvdi44b" path="res://addons/plugin_devtools/src/tools_dock/property_info/PropertyHintStringEditor.gd" id="1_xntyb"]
+
+[sub_resource type="GDScript" id="GDScript_xntyb"]
+resource_name = "ExpEasingEditor"
+script/source = "@tool
+extends VBoxContainer
+
+signal hint_string_constructed(h_string: String)
+
+var attenuation: bool
+var positive_only : bool
+
+func set_attenuation(value: bool) -> void:
+	attenuation = value
+	_construct_hint_string()
+func set_positive_only(value: bool) -> void:
+	positive_only = value
+	_construct_hint_string()
+
+func _construct_hint_string() -> void:
+	var hs := PackedStringArray()
+	if attenuation:
+		hs.append(\"attenuation\")
+	if positive_only:
+		hs.append(\"positive_only\")
+	hint_string_constructed.emit(\",\".join(hs))
+"
+
+[node name="HintStringEditor" type="VBoxContainer"]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 31.0
+grow_horizontal = 2
+size_flags_vertical = 0
+script = ExtResource("1_xntyb")
+
+[node name="HintStringLineEdit" type="LineEdit" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="SuffixEdit" type="HBoxContainer" parent="."]
+visible = false
+layout_mode = 2
+
+[node name="Label" type="Label" parent="SuffixEdit"]
+layout_mode = 2
+text = "Suffix"
+
+[node name="LineEdit" type="LineEdit" parent="SuffixEdit"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TabContainer" type="TabContainer" parent="."]
+layout_mode = 2
+current_tab = 0
+tabs_visible = false
+
+[node name="NoEditor" type="Control" parent="TabContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+metadata/_tab_index = 0
+
+[node name="RangeEditor" type="VBoxContainer" parent="TabContainer"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+script = ExtResource("1_kcgci")
+metadata/_tab_index = 1
+
+[node name="MinMaxStep" type="HBoxContainer" parent="TabContainer/RangeEditor"]
+layout_mode = 2
+
+[node name="Min" type="Label" parent="TabContainer/RangeEditor/MinMaxStep"]
+layout_mode = 2
+text = "Min"
+
+[node name="MinEditor" type="SpinBox" parent="TabContainer/RangeEditor/MinMaxStep"]
+layout_mode = 2
+size_flags_horizontal = 3
+min_value = -9.223372e+18
+max_value = 9.223372e+18
+step = 0.0
+
+[node name="Max" type="Label" parent="TabContainer/RangeEditor/MinMaxStep"]
+layout_mode = 2
+size_flags_horizontal = 8
+text = "Max"
+
+[node name="MaxEditor" type="SpinBox" parent="TabContainer/RangeEditor/MinMaxStep"]
+layout_mode = 2
+size_flags_horizontal = 3
+min_value = -9.223372e+18
+max_value = 9.223372e+18
+step = 0.0
+
+[node name="Step" type="Label" parent="TabContainer/RangeEditor/MinMaxStep"]
+layout_mode = 2
+text = "Step"
+
+[node name="StepEditor" type="SpinBox" parent="TabContainer/RangeEditor/MinMaxStep"]
+layout_mode = 2
+step = 0.0
+
+[node name="GreaterOrLess" type="HBoxContainer" parent="TabContainer/RangeEditor"]
+layout_mode = 2
+
+[node name="Greater" type="CheckBox" parent="TabContainer/RangeEditor/GreaterOrLess"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Or Greater"
+
+[node name="Less" type="CheckBox" parent="TabContainer/RangeEditor/GreaterOrLess"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Or Less"
+
+[node name="Suffix" type="HBoxContainer" parent="TabContainer/RangeEditor"]
+layout_mode = 2
+
+[node name="Suffix" type="Label" parent="TabContainer/RangeEditor/Suffix"]
+layout_mode = 2
+text = "Suffix"
+
+[node name="SuffixEditor" type="LineEdit" parent="TabContainer/RangeEditor/Suffix"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ExpEasingEditor" type="VBoxContainer" parent="TabContainer"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+script = SubResource("GDScript_xntyb")
+metadata/_tab_index = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TabContainer/ExpEasingEditor"]
+layout_mode = 2
+
+[node name="Attenuation" type="CheckBox" parent="TabContainer/ExpEasingEditor/HBoxContainer"]
+layout_mode = 2
+text = "Attenuation"
+
+[node name="PositiveOnly" type="CheckBox" parent="TabContainer/ExpEasingEditor/HBoxContainer"]
+layout_mode = 2
+text = "Positive Only"
+
+[connection signal="text_changed" from="HintStringLineEdit" to="." method="on_hint_string_changed"]
+[connection signal="constructed_hint_string" from="TabContainer/RangeEditor" to="." method="on_hint_string_changed"]
+[connection signal="value_changed" from="TabContainer/RangeEditor/MinMaxStep/MinEditor" to="TabContainer/RangeEditor" method="set_min"]
+[connection signal="value_changed" from="TabContainer/RangeEditor/MinMaxStep/MaxEditor" to="TabContainer/RangeEditor" method="set_max"]
+[connection signal="value_changed" from="TabContainer/RangeEditor/MinMaxStep/StepEditor" to="TabContainer/RangeEditor" method="set_step"]
+[connection signal="toggled" from="TabContainer/RangeEditor/GreaterOrLess/Greater" to="TabContainer/RangeEditor" method="set_allow_greater"]
+[connection signal="toggled" from="TabContainer/RangeEditor/GreaterOrLess/Less" to="TabContainer/RangeEditor" method="set_allow_lesser"]
+[connection signal="text_changed" from="TabContainer/RangeEditor/Suffix/SuffixEditor" to="TabContainer/RangeEditor" method="set_suffix"]
+[connection signal="hint_string_constructed" from="TabContainer/ExpEasingEditor" to="." method="on_hint_string_changed"]

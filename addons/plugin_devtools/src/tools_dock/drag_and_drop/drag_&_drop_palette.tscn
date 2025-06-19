@@ -1,0 +1,65 @@
+[gd_scene load_steps=6 format=3 uid="uid://dqb7yk1c07dt5"]
+
+[ext_resource type="Script" uid="uid://cgmkhgex28eyb" path="res://addons/plugin_devtools/src/controls/DragAndDropPaletteList.gd" id="1_4gy73"]
+[ext_resource type="Script" uid="uid://b2npoi6yw6qaa" path="res://addons/plugin_devtools/src/tools_dock/drag_and_drop/DropPrinter.gd" id="2_jlrab"]
+[ext_resource type="PackedScene" uid="uid://chjj7l2etwi1d" path="res://addons/plugin_devtools/src/tools_dock/drag_and_drop/drop_panel.tscn" id="2_xy0qc"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qw7ms"]
+content_margin_left = 6.0
+content_margin_top = 6.0
+content_margin_right = 6.0
+content_margin_bottom = 6.0
+bg_color = Color(0.09068625, 0.09068625, 0.09068625, 1)
+corner_detail = 1
+anti_aliasing = false
+
+[sub_resource type="GDScriptSyntaxHighlighter" id="GDScriptSyntaxHighlighter_jlrab"]
+
+[node name="VSplitContainer" type="VSplitContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+mouse_filter = 0
+split_offset = -300
+metadata/_edit_lock_ = true
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_qw7ms")
+metadata/_edit_lock_ = true
+
+[node name="MarginContainer" type="MarginContainer" parent="ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+metadata/_edit_lock_ = true
+
+[node name="FlowContainer" type="VBoxContainer" parent="ScrollContainer/MarginContainer"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_4gy73")
+metadata/_edit_lock_ = true
+
+[node name="DropPanel" parent="ScrollContainer/MarginContainer" instance=ExtResource("2_xy0qc")]
+layout_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="CodeEdit" type="CodeEdit" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "Drop something onto the panel above"
+editable = false
+syntax_highlighter = SubResource("GDScriptSyntaxHighlighter_jlrab")
+script = ExtResource("2_jlrab")
+metadata/_edit_lock_ = true
+
+[connection signal="drop_data_button_pressed" from="ScrollContainer/MarginContainer/FlowContainer" to="CodeEdit" method="on_drop"]
+[connection signal="dropped_data" from="ScrollContainer/MarginContainer/DropPanel" to="ScrollContainer/MarginContainer/FlowContainer" method="add_item"]
+[connection signal="dropped_data" from="ScrollContainer/MarginContainer/DropPanel" to="CodeEdit" method="on_drop"]

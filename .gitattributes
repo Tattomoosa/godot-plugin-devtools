@@ -1,0 +1,6 @@
+# Normalize EOL for all files that Git considers text files.
+* text=auto eol=lf
+# Plugin archive rules
+/**        export-ignore
+/addons    !export-ignore
+/addons/** !export-ignore

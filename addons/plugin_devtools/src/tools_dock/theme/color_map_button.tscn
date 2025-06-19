@@ -1,0 +1,71 @@
+[gd_scene load_steps=4 format=3 uid="uid://cureoow0wktwb"]
+
+[ext_resource type="Script" uid="uid://ciolxqoqd6csw" path="res://addons/plugin_devtools/src/tools_dock/theme/ColorMapButton.gd" id="1_bwkd8"]
+
+[sub_resource type="Gradient" id="Gradient_cbrw0"]
+resource_local_to_scene = true
+colors = PackedColorArray(1, 1, 1, 1, 0.50731444, 0.50731444, 0.5073144, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_ixii8"]
+resource_local_to_scene = true
+gradient = SubResource("Gradient_cbrw0")
+
+[node name="ColorMapButton" type="Button"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+text = "#5fb2ff - \"Selection (blue)\""
+alignment = 0
+script = ExtResource("1_bwkd8")
+og_color = Color(1, 1, 1, 1)
+mapped_color = Color(0.50731444, 0.50731444, 0.5073144, 1)
+gradient = SubResource("GradientTexture1D_ixii8")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 0
+
+[node name="Control" type="Control" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+
+[node name="OriginalColor" type="ColorRect" parent="MarginContainer/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.2
+mouse_filter = 2
+
+[node name="GradientTop" type="TextureRect" parent="MarginContainer/HBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(40, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.25
+mouse_filter = 2
+texture = SubResource("GradientTexture1D_ixii8")
+expand_mode = 1
+
+[node name="MappedColor" type="ColorRect" parent="MarginContainer/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.2
+mouse_filter = 2
+color = Color(0.50731444, 0.50731444, 0.5073144, 1)

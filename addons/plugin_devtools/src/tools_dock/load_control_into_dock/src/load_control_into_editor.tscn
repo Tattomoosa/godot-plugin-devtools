@@ -1,0 +1,159 @@
+[gd_scene load_steps=10 format=3 uid="uid://r4tamy6tdgsv"]
+
+[ext_resource type="Script" uid="uid://83yq2e5cupld" path="res://addons/plugin_devtools/src/controls/EditorIconButton.gd" id="1_shdgy"]
+[ext_resource type="Script" uid="uid://bepnqbb46wygl" path="res://addons/plugin_devtools/src/controls/EditorStylesPanelContainer.gd" id="2_dqkfl"]
+[ext_resource type="PackedScene" uid="uid://chjj7l2etwi1d" path="res://addons/plugin_devtools/src/tools_dock/drag_and_drop/drop_panel.tscn" id="3_5kgr5"]
+[ext_resource type="Script" uid="uid://cxs0rq42lelv4" path="res://addons/plugin_devtools/src/tools_dock/load_control_into_dock/src/LoadDroppedNode.gd" id="4_p0l2t"]
+
+[sub_resource type="SVGTexture" id="SVGTexture_8pj0p"]
+_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"#e0e0e0\" d=\"M5 8a4 4 0 1 1 4 4v2a6 6 0 1 0-6-6H1l3 4 3-4z\"/></svg>
+"
+base_scale = 2.0
+saturation = 2.0
+color_map = {
+Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
+Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
+Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
+}
+
+[sub_resource type="SVGTexture" id="SVGTexture_ynlpv"]
+_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"#e0e0e0\" d=\"m2 2v2h2v-2zm4 0v2h8v-2zm-4 5v2h2v-2zm4 0v2h8v-2zm-4 5v2h2v-2zm4 0v2h8v-2z\"/></svg>
+"
+base_scale = 2.0
+saturation = 2.0
+color_map = {
+Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
+Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
+Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
+}
+
+[sub_resource type="SVGTexture" id="SVGTexture_iwisl"]
+_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><g fill=\"none\" stroke=\"#e0e0e0\" stroke-linecap=\"round\"><path stroke-width=\"2\" d=\"M4.22 8.1a3 3 0 1 0 3.68 2.1M8.1 4.22a3 3 0 1 1 2.1 3.68\"/><path d=\"M3.5 5.5 h-2 M5.5 3.5 v-2 M4.5 4.5 l-2 -2\"/></g></svg>
+"
+base_scale = 2.0
+saturation = 2.0
+color_map = {
+Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
+Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
+Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
+}
+
+[sub_resource type="SVGTexture" id="SVGTexture_h1g3y"]
+_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"#fff\" d=\"M8 1a7 7 0 0 0 0 14A7 7 0 0 0 8 1zM7 4h2v2H7zm0 3h2v5H7z\"/></svg>
+"
+base_scale = 2.0
+saturation = 2.0
+color_map = {
+Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
+Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
+Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
+}
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0eilo"]
+content_margin_left = 6.0
+content_margin_top = 6.0
+content_margin_right = 6.0
+content_margin_bottom = 6.0
+bg_color = Color(0.09068625, 0.09068625, 0.09068625, 1)
+corner_detail = 1
+anti_aliasing = false
+
+[node name="Load Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_lock_ = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="ReloadButton" type="Button" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_type_variation = &"InspectorActionButton"
+theme_override_icons/icon = SubResource("SVGTexture_8pj0p")
+disabled = true
+script = ExtResource("1_shdgy")
+icon_name = "Reload"
+button_type = "InspectorActionButton"
+
+[node name="InspectButton" type="Button" parent="VBoxContainer/HBoxContainer"]
+visible = false
+layout_mode = 2
+theme_type_variation = &"InspectorActionButton"
+theme_override_icons/icon = SubResource("SVGTexture_ynlpv")
+disabled = true
+script = ExtResource("1_shdgy")
+icon_name = "FileList"
+button_type = "InspectorActionButton"
+
+[node name="SyncButton" type="Button" parent="VBoxContainer/HBoxContainer"]
+visible = false
+layout_mode = 2
+theme_type_variation = &"InspectorActionButton"
+theme_override_icons/icon = SubResource("SVGTexture_iwisl")
+disabled = true
+script = ExtResource("1_shdgy")
+icon_name = "Unlinked"
+button_type = "InspectorActionButton"
+
+[node name="HelpButton" type="Button" parent="VBoxContainer/HBoxContainer"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 10
+theme_type_variation = &"InspectorActionButton"
+theme_override_icons/icon = SubResource("SVGTexture_h1g3y")
+disabled = true
+script = ExtResource("1_shdgy")
+icon_name = "NodeInfo"
+button_type = "InspectorActionButton"
+
+[node name="Panel" type="PanelContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_0eilo")
+script = ExtResource("2_dqkfl")
+panel_style = "Background"
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/Panel"]
+layout_mode = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer/Panel/MarginContainer"]
+layout_mode = 2
+
+[node name="TabContainer" type="TabContainer" parent="VBoxContainer/Panel/MarginContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+current_tab = 0
+drag_to_rearrange_enabled = true
+tabs_rearrange_group = 1
+script = ExtResource("4_p0l2t")
+
+[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer/Panel/MarginContainer/ScrollContainer/TabContainer"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_0eilo")
+script = ExtResource("2_dqkfl")
+panel_style = "Background"
+metadata/_tab_index = 0
+
+[node name="DropPanel" parent="VBoxContainer/Panel/MarginContainer/ScrollContainer/TabContainer/PanelContainer" instance=ExtResource("3_5kgr5")]
+layout_mode = 2
+restrict_to_types = Array[String](["files", "nodes"])
+restrict_to_file_extensions = Array[String](["tscn", "scn"])
+
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/ReloadButton" to="VBoxContainer/Panel/MarginContainer/ScrollContainer/TabContainer" method="reload"]
+[connection signal="set_buttons_disabled" from="VBoxContainer/Panel/MarginContainer/ScrollContainer/TabContainer" to="VBoxContainer/HBoxContainer/ReloadButton" method="set_disabled"]
+[connection signal="set_buttons_disabled" from="VBoxContainer/Panel/MarginContainer/ScrollContainer/TabContainer" to="VBoxContainer/HBoxContainer/InspectButton" method="set_disabled"]
+[connection signal="set_buttons_disabled" from="VBoxContainer/Panel/MarginContainer/ScrollContainer/TabContainer" to="VBoxContainer/HBoxContainer/SyncButton" method="set_disabled"]
+[connection signal="dropped_data" from="VBoxContainer/Panel/MarginContainer/ScrollContainer/TabContainer/PanelContainer/DropPanel" to="VBoxContainer/Panel/MarginContainer/ScrollContainer/TabContainer" method="_dropped_data"]
