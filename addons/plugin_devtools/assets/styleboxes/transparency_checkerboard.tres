@@ -1,13 +1,17 @@
-[gd_resource type="StyleBoxTexture" load_steps=2 format=3 uid="uid://c421eudbhrev3"]
+[gd_resource type="StyleBoxTexture" load_steps=3 format=3 uid="uid://c421eudbhrev3"]
+
+[ext_resource type="Texture2D" uid="uid://cb2jb6l5ls04g" path="res://addons/plugin_devtools/assets/icons/Checkerboard.tres" id="1_mjmd1"]
 
 [sub_resource type="SVGTexture" id="SVGTexture_jdnqq"]
+resource_local_to_scene = false
+resource_name = ""
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"64\" height=\"64\"><g fill=\"#fff\"><path fill-opacity=\".2\" d=\"M0 0h64v64H0z\"/><path fill-opacity=\".4\" d=\"M0 0v16h16V0zm16 16v16h16V16zm16 0h16V0H32zm16 0v16h16V16zm0 16H32v16h16zm0 16v16h16V48zm-16 0H16v16h16zm-16 0V32H0v16z\"/></g></svg>
 "
 saturation = 2.0
 color_map = {
-Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
-Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
-Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
+Color(1, 0.372549, 0.372549, 1): Color(1, 0.47, 0.42, 1),
+Color(0.372549, 1, 0.592157, 1): Color(0.45, 0.95, 0.5, 1),
+Color(1, 0.866667, 0.396078, 1): Color(1, 0.87, 0.4, 1)
 }
 
 [resource]
@@ -17,7 +21,7 @@ content_margin_left = 10.0
 content_margin_top = 10.0
 content_margin_right = 10.0
 content_margin_bottom = 10.0
-texture = SubResource("SVGTexture_jdnqq")
+texture = ExtResource("1_mjmd1")
 axis_stretch_horizontal = 1
 axis_stretch_vertical = 1
-modulate_color = Color(1, 1, 1, 0.14901961)
+modulate_color = Color(1, 1, 1, 0.14902)

@@ -11,5 +11,6 @@ func _ready() -> void:
 		if option in EditorInterface.get_editor_theme().get_type_variation_list("Control"):
 			options_to_remove.push_back(option)
 	for o in options_to_remove:
-		options.erase(o)
+		var i := options_to_remove.find(o)
+		options.remove_at(i)
 	super()

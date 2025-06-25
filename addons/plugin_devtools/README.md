@@ -14,6 +14,8 @@
 	<br/>
 </div>
 
+> Complete and in a polished state but uses 4.5-only features (oops) and I don't know that I have it in me to backport when I'm using 4.5 exclusively.
+
 # Basic Overview
 
 Host of tools which aid with plugin development. Explore the editor, explore the editor theme, explore property info, load any Control.

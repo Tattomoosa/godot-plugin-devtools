@@ -9,7 +9,6 @@ func _ready() -> void:
 	tab_bar = get_tab_bar()
 	tab_bar.tab_close_display_policy = TabBar.CLOSE_BUTTON_SHOW_ALWAYS
 	tab_bar.set_tab_hidden(0, true)
-	tab_bar.close_with_middle_mouse = true
 	tab_bar.tab_close_pressed.connect(_close_tab)
 	child_entered_tree.connect(_child_entered)
 	child_exiting_tree.connect(_child_exiting)
