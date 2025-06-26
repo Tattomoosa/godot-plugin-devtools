@@ -1,39 +1,12 @@
-[gd_scene load_steps=9 format=3 uid="uid://girnjo3kex01"]
+[gd_scene load_steps=8 format=3 uid="uid://girnjo3kex01"]
 
 [ext_resource type="Script" uid="uid://bdiy7eqm1bnty" path="res://addons/plugin_devtools/src/tools_dock/theme/EditorThemeTypeListPicker.gd" id="1_2i022"]
 [ext_resource type="Script" uid="uid://esqxcw7d4l6a" path="res://addons/plugin_devtools/src/controls/CopyNotifier.gd" id="2_savw1"]
 [ext_resource type="Script" uid="uid://ba2l7d86y8dr6" path="res://addons/plugin_devtools/src/tools_dock/theme/EditorThemeColorList.gd" id="4_081to"]
 
-[sub_resource type="SVGTexture" id="SVGTexture_sca8y"]
-_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"12\"><path fill=\"#ff5f5f\" d=\"M4 4a3 3 0 0 0 0 6h1V8H4a1 1 0 0 1 0-2h1V4z\"/><path fill=\"#5fff97\" d=\"M6 2v5a3 3 0 0 0 3 3h1V8H9a1 1 0 0 1-1-1V2z\"/><path fill=\"#5fb2ff\" d=\"M14 4a3 3 0 0 0-3 3v3h2V7a1 1 0 0 1 1-1h1V4z\"/></svg>
-"
-saturation = 2.0
-color_map = {
-Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
-Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
-Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
-}
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_2i022"]
 
-[sub_resource type="SVGTexture" id="SVGTexture_2i022"]
-_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"#e0e0e0\" d=\"M10.168 8.754a5 5 0 1 0-1.414 1.414l4.316 4.316 1.414-1.414zM6 3a3 3 0 0 1 0 6 3 3 0 0 1 0-6z\"/></svg>
-"
-base_scale = 2.0
-saturation = 2.0
-color_map = {
-Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
-Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
-Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
-}
-
-[sub_resource type="SVGTexture" id="SVGTexture_cmf6v"]
-_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"64\" height=\"64\"><g fill=\"#fff\"><path fill-opacity=\".2\" d=\"M0 0h64v64H0z\"/><path fill-opacity=\".4\" d=\"M0 0v16h16V0zm16 16v16h16V16zm16 0h16V0H32zm16 0v16h16V16zm0 16H32v16h16zm0 16v16h16V48zm-16 0H16v16h16zm-16 0V32H0v16z\"/></g></svg>
-"
-saturation = 2.0
-color_map = {
-Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
-Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
-Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
-}
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_cmf6v"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2i022"]
 resource_name = "Transparent Background"
@@ -41,10 +14,10 @@ content_margin_left = 10.0
 content_margin_top = 10.0
 content_margin_right = 10.0
 content_margin_bottom = 10.0
-texture = SubResource("SVGTexture_cmf6v")
+texture = SubResource("PlaceholderTexture2D_cmf6v")
 axis_stretch_horizontal = 1
 axis_stretch_vertical = 1
-modulate_color = Color(1, 1, 1, 0.14901961)
+modulate_color = Color(1, 1, 1, 0)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ixii8"]
 
@@ -56,7 +29,6 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 metadata/_tab_index = 2
-metadata/icon = SubResource("SVGTexture_sca8y")
 metadata/_edit_lock_ = true
 
 [node name="GridContainer" type="GridContainer" parent="."]
@@ -67,12 +39,12 @@ columns = 2
 layout_mode = 2
 size_flags_horizontal = 3
 placeholder_text = "Filter Color"
-right_icon = SubResource("SVGTexture_2i022")
+right_icon = SubResource("PlaceholderTexture2D_2i022")
 
 [node name="OptionButton" type="OptionButton" parent="GridContainer"]
 layout_mode = 2
 selected = 0
-item_count = 52
+item_count = 46
 popup/item_0/text = "Editor"
 popup/item_0/id = 0
 popup/item_1/text = "TooltipLabel"
@@ -103,80 +75,68 @@ popup/item_13/text = "LineEdit"
 popup/item_13/id = 13
 popup/item_14/text = "TextEdit"
 popup/item_14/id = 14
-popup/item_15/text = "FoldableContainer"
+popup/item_15/text = "Window"
 popup/item_15/id = 15
-popup/item_16/text = "Window"
+popup/item_16/text = "FileDialog"
 popup/item_16/id = 16
-popup/item_17/text = "FileDialog"
+popup/item_17/text = "PopupMenu"
 popup/item_17/id = 17
-popup/item_18/text = "PopupMenu"
+popup/item_18/text = "RichTextLabel"
 popup/item_18/id = 18
-popup/item_19/text = "RichTextLabel"
+popup/item_19/text = "Label"
 popup/item_19/id = 19
-popup/item_20/text = "Label"
+popup/item_20/text = "SpinBox"
 popup/item_20/id = 20
-popup/item_21/text = "SpinBox"
+popup/item_21/text = "ProgressBar"
 popup/item_21/id = 21
-popup/item_22/text = "ProgressBar"
+popup/item_22/text = "GraphEdit"
 popup/item_22/id = 22
-popup/item_23/text = "GraphEdit"
+popup/item_23/text = "GraphEditMinimap"
 popup/item_23/id = 23
-popup/item_24/text = "GraphEditMinimap"
+popup/item_24/text = "GraphElement"
 popup/item_24/id = 24
-popup/item_25/text = "GraphElement"
+popup/item_25/text = "GraphNode"
 popup/item_25/id = 25
-popup/item_26/text = "GraphNode"
+popup/item_26/text = "GraphNodeTitleLabel"
 popup/item_26/id = 26
-popup/item_27/text = "GraphNodeTitleLabel"
+popup/item_27/text = "GraphFrame"
 popup/item_27/id = 27
-popup/item_28/text = "GraphFrame"
+popup/item_28/text = "GraphFrameTitleLabel"
 popup/item_28/id = 28
-popup/item_29/text = "GraphFrameTitleLabel"
+popup/item_29/text = "VSRerouteNode"
 popup/item_29/id = 29
-popup/item_30/text = "VSRerouteNode"
+popup/item_30/text = "BottomPanelButton"
 popup/item_30/id = 30
-popup/item_31/text = "ColorPicker"
+popup/item_31/text = "EditorSpinSlider"
 popup/item_31/id = 31
-popup/item_32/text = "RunBarButtonMovieMakerDisabled"
+popup/item_32/text = "EditorStyles"
 popup/item_32/id = 32
-popup/item_33/text = "RunBarButtonMovieMakerEnabled"
+popup/item_33/text = "EditorLogFilterButton"
 popup/item_33/id = 33
-popup/item_34/text = "BottomPanelButton"
+popup/item_34/text = "PreviewLightButton"
 popup/item_34/id = 34
-popup/item_35/text = "EditorSpinSlider"
+popup/item_35/text = "EditorProperty"
 popup/item_35/id = 35
-popup/item_36/text = "EditorLogFilterButton"
+popup/item_36/text = "EditorInspectorSection"
 popup/item_36/id = 36
-popup/item_37/text = "PreviewLightButton"
+popup/item_37/text = "AnimationTimelineEdit"
 popup/item_37/id = 37
-popup/item_38/text = "EditorProperty"
+popup/item_38/text = "AnimationTrackEdit"
 popup/item_38/id = 38
-popup/item_39/text = "EditorInspectorSection"
+popup/item_39/text = "AnimationTrackEditGroup"
 popup/item_39/id = 39
-popup/item_40/text = "EditorStyles"
+popup/item_40/text = "AnimationBezierTrackEdit"
 popup/item_40/id = 40
-popup/item_41/text = "AnimationTimelineEdit"
+popup/item_41/text = "EditorHelp"
 popup/item_41/id = 41
-popup/item_42/text = "AnimationTrackEdit"
+popup/item_42/text = "AssetLib"
 popup/item_42/id = 42
-popup/item_43/text = "AnimationTrackEditGroup"
+popup/item_43/text = "ThemeEditor"
 popup/item_43/id = 43
-popup/item_44/text = "AnimationBezierTrackEdit"
+popup/item_44/text = "GraphStateMachine"
 popup/item_44/id = 44
-popup/item_45/text = "EditorHelp"
+popup/item_45/text = "CodeEdit"
 popup/item_45/id = 45
-popup/item_46/text = "AssetLib"
-popup/item_46/id = 46
-popup/item_47/text = "ThemeEditor"
-popup/item_47/id = 47
-popup/item_48/text = "GraphStateMachine"
-popup/item_48/id = 48
-popup/item_49/text = "CodeEdit"
-popup/item_49/id = 49
-popup/item_50/text = "FlatButton"
-popup/item_50/id = 50
-popup/item_51/text = "FlatMenuButton"
-popup/item_51/id = 51
 script = ExtResource("1_2i022")
 type = 2
 

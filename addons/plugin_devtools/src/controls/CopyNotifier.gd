@@ -14,6 +14,6 @@ func show_and_fade() -> void:
 	tween = create_tween()
 	tween.tween_property(self, ^"modulate", Color.TRANSPARENT, 0.5)
 
-func _validate_property(property: Dictionary) -> void:
-	if property.name == "texture":
-		property.usage = PROPERTY_USAGE_NO_INSTANCE_STATE
+#func _validate_property(property: Dictionary) -> void:
+	#if property.name == "texture":
+		#property.usage = PROPERTY_USAGE_NO_INSTANCE_STATE

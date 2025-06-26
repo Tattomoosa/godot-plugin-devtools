@@ -4,20 +4,10 @@
 [ext_resource type="Script" uid="uid://bmol1mf2olqsj" path="res://addons/plugin_devtools/src/tools_dock/theme/ColorMapList.gd" id="2_33ynf"]
 [ext_resource type="PackedScene" uid="uid://cureoow0wktwb" path="res://addons/plugin_devtools/src/tools_dock/theme/color_map_button.tscn" id="3_xpfyn"]
 
-[sub_resource type="SVGTexture" id="SVGTexture_wxbfa"]
-_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"14\" height=\"14\"><path fill=\"#fff\" d=\"M4 1a1 1 0 0 0-1 1v1H1v2h2v4H1v2h2v1a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V8h2V6h-2V2a1 1 0 0 0-1-1z\"/><g fill-opacity=\".863\"><path fill=\"red\" d=\"M5 3h4v2H5z\"/><path fill=\"#0f0\" d=\"M5 6h4v2H5z\"/><path fill=\"#00f\" d=\"M5 9h4v2H5z\"/></g></svg>
-"
-base_scale = 2.0
-saturation = 2.0
-color_map = {
-Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
-Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
-Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
-}
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_8r6c8"]
 
 [node name="Color Map" type="VBoxContainer"]
 metadata/_tab_index = 5
-metadata/icon = SubResource("SVGTexture_wxbfa")
 metadata/_edit_lock_ = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
@@ -35,6 +25,7 @@ modulate = Color(1, 1, 1, 0)
 layout_mode = 2
 size_flags_horizontal = 8
 size_flags_vertical = 4
+texture = SubResource("PlaceholderTexture2D_8r6c8")
 stretch_mode = 5
 script = ExtResource("1_8r6c8")
 

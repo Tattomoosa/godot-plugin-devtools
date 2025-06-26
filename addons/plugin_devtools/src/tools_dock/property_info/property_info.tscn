@@ -1,19 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://dh6b4o5wvviu0"]
+[gd_scene load_steps=4 format=3 uid="uid://dh6b4o5wvviu0"]
 
 [ext_resource type="Script" uid="uid://cj0mikwtggy50" path="res://addons/plugin_devtools/src/controls/TabDataFromMetadata.gd" id="1_tr21w"]
 [ext_resource type="PackedScene" uid="uid://docovj7syjbn0" path="res://addons/plugin_devtools/src/tools_dock/property_info/property_info_explorer.tscn" id="2_nqm23"]
 [ext_resource type="PackedScene" uid="uid://di5jb2703gpct" path="res://addons/plugin_devtools/src/tools_dock/property_info/property_info_builder.tscn" id="3_2tjb4"]
-
-[sub_resource type="SVGTexture" id="SVGTexture_16pao"]
-_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"#fff\" d=\"M8 1a7 7 0 0 0 0 14A7 7 0 0 0 8 1zM7 4h2v2H7zm0 3h2v5H7z\"/></svg>
-"
-base_scale = 2.0
-saturation = 2.0
-color_map = {
-Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
-Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
-Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
-}
 
 [node name="Property Info" type="VBoxContainer"]
 anchors_preset = 15
@@ -24,7 +13,6 @@ grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 metadata/_tab_index = 1
-metadata/icon = SubResource("SVGTexture_16pao")
 
 [node name="TabContainer" type="TabContainer" parent="."]
 layout_mode = 2
@@ -33,6 +21,7 @@ current_tab = 1
 script = ExtResource("1_tr21w")
 
 [node name="Explorer" parent="TabContainer" instance=ExtResource("2_nqm23")]
+visible = false
 layout_mode = 2
 
 [node name="Builder" parent="TabContainer" instance=ExtResource("3_2tjb4")]

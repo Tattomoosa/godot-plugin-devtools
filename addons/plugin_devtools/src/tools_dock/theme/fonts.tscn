@@ -2,22 +2,19 @@
 
 [ext_resource type="Script" uid="uid://bdiy7eqm1bnty" path="res://addons/plugin_devtools/src/tools_dock/theme/EditorThemeTypeListPicker.gd" id="1_cxltf"]
 [ext_resource type="Script" uid="uid://esqxcw7d4l6a" path="res://addons/plugin_devtools/src/controls/CopyNotifier.gd" id="2_spu3f"]
-[ext_resource type="StyleBox" uid="uid://c421eudbhrev3" path="res://addons/plugin_devtools/assets/styleboxes/transparency_checkerboard.tres" id="3_spu3f"]
 [ext_resource type="Script" uid="uid://bepnqbb46wygl" path="res://addons/plugin_devtools/src/controls/EditorStylesPanelContainer.gd" id="3_w35cm"]
 [ext_resource type="Script" uid="uid://cv76hxml18ciy" path="res://addons/plugin_devtools/src/tools_dock/theme/EditorThemeExplorerFontList.gd" id="4_s7xwe"]
 
-[sub_resource type="SVGTexture" id="SVGTexture_cxltf"]
-resource_local_to_scene = false
-resource_name = ""
-_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"#e0e0e0\" d=\"M10.168 8.754a5 5 0 1 0-1.414 1.414l4.316 4.316 1.414-1.414zM6 3a3 3 0 0 1 0 6 3 3 0 0 1 0-6z\"/></svg>
-"
-base_scale = 2.0
-saturation = 2.0
-color_map = {
-Color(1, 0.372549, 0.372549, 1): Color(1, 0.47, 0.42, 1),
-Color(0.372549, 1, 0.592157, 1): Color(0.45, 0.95, 0.5, 1),
-Color(1, 0.866667, 0.396078, 1): Color(1, 0.87, 0.4, 1)
-}
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_cxltf"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bp2bt"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.132, 0.132, 0.132, 1)
+corner_detail = 1
+anti_aliasing = false
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_spu3f"]
 
@@ -38,7 +35,7 @@ columns = 2
 layout_mode = 2
 size_flags_horizontal = 3
 placeholder_text = "Filter Color"
-right_icon = SubResource("SVGTexture_cxltf")
+right_icon = SubResource("PlaceholderTexture2D_cxltf")
 
 [node name="OptionButton" type="OptionButton" parent="GridContainer"]
 layout_mode = 2
@@ -89,7 +86,7 @@ script = ExtResource("2_spu3f")
 [node name="PanelContainer" type="PanelContainer" parent="."]
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_styles/panel = ExtResource("3_spu3f")
+theme_override_styles/panel = SubResource("StyleBoxFlat_bp2bt")
 script = ExtResource("3_w35cm")
 panel_style = "Background"
 

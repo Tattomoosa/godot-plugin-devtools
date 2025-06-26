@@ -1,37 +1,31 @@
-[gd_scene load_steps=6 format=3 uid="uid://dwscxxwhwxkmt"]
+[gd_scene load_steps=7 format=3 uid="uid://dwscxxwhwxkmt"]
 
 [ext_resource type="Script" uid="uid://gu52lrpt6a0x" path="res://addons/plugin_devtools/src/controls/SearchMenu.gd" id="1_256fh"]
 
-[sub_resource type="SVGTexture" id="SVGTexture_y220a"]
-_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"12\" height=\"12\"><path fill=\"none\" stroke=\"#e0e0e0\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"m2 4 4 4 4-4\"/></svg>
-"
-base_scale = 2.0
-saturation = 2.0
-color_map = {
-Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
-Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
-Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
-}
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_fkcv0"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_udcms"]
-bg_color = Color(0.09068625, 0.09068625, 0.09068625, 1)
+bg_color = Color(0.0906862, 0.0906862, 0.0906862, 1)
 corner_detail = 1
 anti_aliasing = false
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_y220a"]
 
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_dhjs7"]
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_256fh"]
-bg_color = Color(0.6, 0.6, 0.6, 0.13725491)
+bg_color = Color(0.6, 0.6, 0.6, 0.137255)
 
 [node name="LineEdit" type="LineEdit"]
 offset_right = 404.0
 offset_bottom = 50.0
+text = "one"
 placeholder_text = "Search Options..."
 context_menu_enabled = false
 middle_mouse_paste_enabled = false
 selecting_enabled = false
 deselect_on_focus_loss_enabled = false
-right_icon = SubResource("SVGTexture_y220a")
+right_icon = SubResource("PlaceholderTexture2D_fkcv0")
 script = ExtResource("1_256fh")
 options = PackedStringArray("one", "two", "three")
 popup_panel_style = SubResource("StyleBoxFlat_udcms")
@@ -39,7 +33,6 @@ popup_panel_style = SubResource("StyleBoxFlat_udcms")
 [node name="PopupPanel" type="PopupPanel" parent="."]
 unique_name_in_owner = true
 auto_translate_mode = 2
-oversampling_override = 1.0
 size = Vector2i(404, 286)
 auto_translate = false
 theme_override_styles/panel = SubResource("StyleBoxEmpty_y220a")
@@ -61,7 +54,7 @@ unique_name_in_owner = true
 layout_mode = 2
 clear_button_enabled = true
 middle_mouse_paste_enabled = false
-right_icon = SubResource("SVGTexture_y220a")
+right_icon = SubResource("PlaceholderTexture2D_dhjs7")
 
 [node name="PopupScroll" type="ScrollContainer" parent="PopupPanel/PanelContainer/VBoxContainer"]
 layout_mode = 2

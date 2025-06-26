@@ -23,4 +23,3 @@ const Editor := preload("uid://bn0b2tjm0ey8u")
 
 ## "Static" class
 func _init() -> void: assert(false, "Namespace class can't be instantiated")
-

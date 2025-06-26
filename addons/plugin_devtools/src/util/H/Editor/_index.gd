@@ -9,4 +9,3 @@ const SceneRootChangeNotifier := preload("uid://b6ngtrfs5mwos")
 
 ## "Static" class
 func _init() -> void: assert(false, "Namespace class can't be instantiated")
-
