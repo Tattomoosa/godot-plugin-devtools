@@ -9,6 +9,9 @@ var dock_popup : Popup
 var add_to_bottom_button : Button
 var _docks : Dictionary[DockSlot, Control] = {}
 
+func _get_plugin_name() -> String:
+	return "PluginDevTools"
+
 func _enable_plugin() -> void:
 	# Add autoloads here.
 	pass
@@ -18,20 +21,15 @@ func _disable_plugin() -> void:
 	pass
 
 func _enter_tree() -> void:
-	name = "PluginDevTools"
-	tools_dock = tools_dock_scene.instantiate()
-	add_control_to_bottom_panel(tools_dock, "Plugin DevTools")
-
-	# set_dock_tab_icon(tools_dock, plugin_icon)
-	# var tc : TabContainer = tools_dock.get_parent()
-	# var popup := tc.get_popup()
-	# popup.about_to_popup.connect(_add_bottom_panel_button_to_popup)
-	# tools_dock.get_child(0).get_child(0).set_popup(popup)
+	#name = "PluginDevTools"
+	#tools_dock = tools_dock_scene.instantiate()
+	#add_control_to_bottom_panel(tools_dock, "Plugin DevTools")
+	pass
 
 func _exit_tree() -> void:
-	# remove_control_from_docks(tools_dock)
-	remove_control_from_bottom_panel(tools_dock)
-	tools_dock.queue_free()
+	#remove_control_from_bottom_panel(tools_dock)
+	#tools_dock.queue_free()
+	pass
 
 func _add_bottom_panel_button_to_popup() -> void:
 	var tc : TabContainer = tools_dock.get_parent()

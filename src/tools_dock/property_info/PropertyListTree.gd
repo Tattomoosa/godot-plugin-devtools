@@ -85,6 +85,8 @@ func _build_tree(object: Object) -> void:
 func _find_property(property: String, root = null) -> void:
 	if !root:
 		root = get_root()
+		if not is_instance_valid(root):
+			return
 		for child in root.get_children():
 			child.set_collapsed_recursive(true)
 	for item : TreeItem in root.get_children():

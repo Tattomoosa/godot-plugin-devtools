@@ -1,16 +1,12 @@
-[gd_scene load_steps=12 format=3 uid="uid://bagj2x3qnhgkh"]
+[gd_scene load_steps=8 format=3 uid="uid://bagj2x3qnhgkh"]
 
 [ext_resource type="Script" uid="uid://cj0mikwtggy50" path="res://addons/plugin_devtools/src/controls/TabDataFromMetadata.gd" id="1_16pao"]
+[ext_resource type="Script" uid="uid://idoxuv1oll14" path="res://addons/plugin_devtools/src/tools_dock/plugin_devtools_dock.gd" id="1_wat77"]
 [ext_resource type="PackedScene" uid="uid://cowdqp6wx8dl0" path="res://addons/plugin_devtools/src/tools_dock/theme/theme_tool.tscn" id="2_wat77"]
 [ext_resource type="PackedScene" uid="uid://dh6b4o5wvviu0" path="res://addons/plugin_devtools/src/tools_dock/property_info/property_info.tscn" id="3_ib2jp"]
-[ext_resource type="Texture2D" uid="uid://d5711aw2lms1" path="res://addons/plugin_devtools/assets/icons/Theme.tres" id="3_r8oys"]
-[ext_resource type="Texture2D" uid="uid://o86ijh1bae8c" path="res://addons/plugin_devtools/assets/icons/PropertyInfo.svg" id="4_4skf5"]
-[ext_resource type="Texture2D" uid="uid://cducmivcy7t15" path="res://addons/plugin_devtools/assets/icons/EditorDebugger.png" id="5_mmdrg"]
 [ext_resource type="PackedScene" uid="uid://bn8g7x356tl3q" path="res://addons/plugin_devtools/src/tools_dock/editor_debugger/dock/editor_debugger.tscn" id="7_4skf5"]
-[ext_resource type="Texture2D" uid="uid://b85qtovudbkon" path="res://addons/plugin_devtools/assets/icons/DragAndDrop.tres" id="7_rxoah"]
 [ext_resource type="PackedScene" uid="uid://dqb7yk1c07dt5" path="res://addons/plugin_devtools/src/tools_dock/drag_and_drop/drag_&_drop_palette.tscn" id="7_wat77"]
 [ext_resource type="PackedScene" uid="uid://r4tamy6tdgsv" path="res://addons/plugin_devtools/src/tools_dock/load_control_into_dock/src/load_control_into_editor.tscn" id="8_bb7lm"]
-[ext_resource type="Texture2D" uid="uid://d173jdavljnfr" path="res://addons/plugin_devtools/src/tools_dock/load_control_into_dock/assets/icons/LoadControlInDock.svg" id="9_4skf5"]
 
 [node name="Plugin Dev Tools" type="MarginContainer"]
 anchors_preset = 15
@@ -18,13 +14,27 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_wat77")
 metadata/_edit_lock_ = true
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 2
 metadata/_edit_lock_ = true
 
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Control" type="Control" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MBOptionsTarget" type="MarginContainer" parent="VBoxContainer/HBoxContainer"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+
 [node name="TabContainer" type="TabContainer" parent="VBoxContainer"]
+unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
 current_tab = 3
@@ -36,27 +46,22 @@ metadata/_edit_lock_ = true
 [node name="Theme" parent="VBoxContainer/TabContainer" instance=ExtResource("2_wat77")]
 visible = false
 layout_mode = 2
-metadata/icon = ExtResource("3_r8oys")
 
 [node name="Property Info" parent="VBoxContainer/TabContainer" instance=ExtResource("3_ib2jp")]
 visible = false
 layout_mode = 2
-metadata/icon = ExtResource("4_4skf5")
 metadata/_edit_lock_ = true
 
 [node name="Drag & Drop" parent="VBoxContainer/TabContainer" instance=ExtResource("7_wat77")]
 visible = false
 layout_mode = 2
 metadata/_tab_index = 2
-metadata/icon = ExtResource("7_rxoah")
 
 [node name="Editor Debugger" parent="VBoxContainer/TabContainer" instance=ExtResource("7_4skf5")]
 layout_mode = 2
 metadata/_tab_index = 3
-metadata/icon = ExtResource("5_mmdrg")
 
 [node name="Load Control" parent="VBoxContainer/TabContainer" instance=ExtResource("8_bb7lm")]
 visible = false
 layout_mode = 2
 metadata/_tab_index = 4
-metadata/icon = ExtResource("9_4skf5")

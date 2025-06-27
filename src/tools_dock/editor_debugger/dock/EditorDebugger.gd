@@ -14,6 +14,8 @@ signal node_selected(node: Node)
 const METADATA_NODE_NAME = 0
 var _control_highlighter: ColorRect = null
 
+var connected_windows = []
+
 func _enter_tree() -> void:
 	if is_part_of_edited_scene():
 		set_process(false)
@@ -22,11 +24,40 @@ func _enter_tree() -> void:
 	_control_highlighter.color = Color(EditorInterface.get_editor_theme().get_color("accent_color", &"Editor"), 0.1)
 	_control_highlighter.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	_control_highlighter.hide()
-	get_viewport().add_child.call_deferred(_control_highlighter)
+	#get_viewport().add_child.call_deferred(_control_highlighter)
+	EditorInterface.get_base_control().add_child.call_deferred(_control_highlighter)
+	_connect_window_signals()
+	if not EditorInterface.get_resource_filesystem().filesystem_changed.is_connected(_connect_window_signals):
+		EditorInterface.get_resource_filesystem().filesystem_changed.connect(_connect_window_signals, 1)
 
 func _exit_tree() -> void:
 	if _control_highlighter != null:
 		_control_highlighter.queue_free()
+	_disconnect_window_signals()
+
+func _connect_window_signals():
+	var base_control = EditorInterface.get_base_control()
+	if not base_control.get_viewport().window_input.is_connected(_editor_input):
+		base_control.get_viewport().window_input.connect(_editor_input.bind(base_control.get_window()))
+	
+	for child in base_control.get_children():
+		if child is Window:
+			if not child.window_input.is_connected(_editor_input):
+				child.window_input.connect(_editor_input.bind(child))
+				if not child in connected_windows:
+					connected_windows.append(child)
+
+func _disconnect_window_signals():
+	var base_control = EditorInterface.get_base_control()
+	if base_control.get_viewport().window_input.is_connected(_editor_input):
+		base_control.get_viewport().window_input.disconnect(_editor_input)
+	var disconnected_windows = []
+	for window in connected_windows:
+		if window.window_input.is_connected(_editor_input):
+			window.window_input.disconnect(_editor_input)
+			disconnected_windows.append(window)
+	for window in disconnected_windows:
+		connected_windows.erase(window)
 
 func highlight_checkbox_toggled(value: bool) -> void:
 	if !value:
@@ -79,14 +110,31 @@ func _highlight_node(node: Node) -> void:
 func _on_Tree_nothing_selected() -> void:
 	_control_highlighter.hide()
 
-func _input(event: InputEvent) -> void:
+func _editor_input(event: InputEvent, window:Window) -> void:
+	_check_input(event, window)
+
+#func _input(event: InputEvent) -> void:
+	#return
+	#if get_viewport() == EditorInterface.get_base_control().get_viewport():
+		#return
+	#_check_input(event, get_viewport())
+
+func _check_input(event: InputEvent, window:Window):
 	if event is InputEventKey:
 		if event.pressed:
 			if event.keycode == KEY_F12:
-				pick(get_viewport().get_mouse_position())
+				pick(window)
 
-func pick(mpos: Vector2) -> void:
-	var root := get_tree().root
+func pick(window:Window) -> void:
+	var mpos = window.get_viewport().get_mouse_position()
+	var root = window
+	if window != EditorInterface.get_base_control().get_window():
+		print("REP")
+		_control_highlighter.reparent(window)
+	else:
+		_control_highlighter.reparent(EditorInterface.get_base_control())
+	await get_tree().process_frame
+	#var root := get_tree().root
 	var node := _pick(root, mpos)
 	if node != null:
 		print("Picked ", node, " at ", node.get_path())
