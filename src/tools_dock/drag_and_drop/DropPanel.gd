@@ -27,6 +27,8 @@ func _can_drop_data(_at_position: Vector2, data: Variant) -> bool:
 	else:
 		if data is Dictionary and "type" in data and data.type in restrict_to_types:
 			if data.type == "files" and !restrict_to_file_extensions.is_empty():
+				if data.files.is_empty():
+					return false
 				var extension : String = data.files[0].get_extension()
 				return extension in restrict_to_file_extensions
 			return true

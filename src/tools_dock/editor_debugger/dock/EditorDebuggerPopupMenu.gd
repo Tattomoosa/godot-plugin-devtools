@@ -36,9 +36,11 @@ func _ready() -> void:
 		var index := get_item_index(id)
 		set_item_tooltip(index, _popup_action_names[id].tooltip)
 	id_pressed.connect(_on_popup_menu_id_pressed)
+	popup_hide.connect(_popup_hide)
 
 func _on_popup_menu_id_pressed(id: int) -> void:
 	hide()
+	
 	match id:
 		POPUP_ACTIONS.SAVE_BRANCH_AS_SCENE:
 			save_branch_as_scene.emit()
@@ -63,3 +65,8 @@ func _on_popup_menu_id_pressed(id: int) -> void:
 			var node_types_str := "%s"%[node_types]
 			DisplayServer.clipboard_set(node_types_str)
 			print("Copied to clipboard: %s"%[node_types_str])
+
+func _popup_hide():
+	if get_window() != EditorInterface.get_base_control().get_window():
+		reparent(EditorInterface.get_base_control())
+		print("BACK TO ED")

@@ -21,14 +21,19 @@ metadata/_edit_lock_ = true
 layout_mode = 2
 metadata/_edit_lock_ = true
 
-[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+[node name="Spacer" type="Control" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 2)
 layout_mode = 2
 
-[node name="Control" type="Control" parent="VBoxContainer/HBoxContainer"]
+[node name="MBH" type="HBoxContainer" parent="VBoxContainer"]
+visible = false
+layout_mode = 2
+
+[node name="Spacer" type="Control" parent="VBoxContainer/MBH"]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="MBOptionsTarget" type="MarginContainer" parent="VBoxContainer/HBoxContainer"]
+[node name="MBOptionsTarget" type="MarginContainer" parent="VBoxContainer/MBH"]
 unique_name_in_owner = true
 visible = false
 layout_mode = 2

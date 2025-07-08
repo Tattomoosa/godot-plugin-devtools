@@ -34,7 +34,8 @@ func _populate() -> void:
 		btn.mouse_entered.connect(mouse_hovered_button.emit.bind(item_name))
 		btn.mouse_exited.connect(mouse_hovered_button.emit.bind(""))
 		btn.pressed.connect(button_pressed.emit)
-		btn.pressed.connect(DisplayServer.clipboard_set.bind(_get_copy_format_string() % [item_name, theme_type]))
+		#btn.pressed.connect(DisplayServer.clipboard_set.bind(_get_copy_format_string() % [item_name, theme_type]))
+		btn.pressed.connect(DisplayServer.clipboard_set.bind('"%s"' % item_name))
 		btn.set_drag_forwarding(_get_item_drag_data.bind(btn), Callable(), Callable())
 		btn.name = item_name
 	var max_size_x = 0

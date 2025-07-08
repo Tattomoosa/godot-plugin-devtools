@@ -14,5 +14,6 @@ func _ready() -> void:
 	m.reparent(tab_container.get_tab_bar())
 	m.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	m.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	m.show()
 	#tab_container.get_tab_bar().hide()
 	#tab_bar.reparent(tab_container.get_tab_bar())

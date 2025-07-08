@@ -42,9 +42,9 @@ func update() -> void:
 		return
 	var root := create_item()
 	var node : Node = debugger_item.get_metadata(0)
-
-	root.set_icon(0, _get_icon(node))
-	root.set_text(0, node.name)
+	if is_instance_valid(root):
+		root.set_icon(0, _get_icon(node))
+		root.set_text(0, node.name)
 
 	var object_signals := _get_object_defining_signals(node)
 	for object_signal_info in object_signals:

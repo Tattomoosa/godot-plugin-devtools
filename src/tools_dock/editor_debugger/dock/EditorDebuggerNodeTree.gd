@@ -123,7 +123,7 @@ func _update_branch(root_node: Node, root_item: TreeItem) -> void:
 	all_nodes.push_back(root_node.name + ":" + H.Scripts.get_class_name_or_script_name(root_node))
 	var child_items := root_item.get_children()
 
-	var non_internal_children := root_node.get_children()	
+	var non_internal_children := root_node.get_children()
 	for i in root_node.get_child_count(true):
 		var child := root_node.get_child(i, true)
 		if !child or !is_instance_valid(child):
@@ -142,9 +142,13 @@ func _update_branch(root_node: Node, root_item: TreeItem) -> void:
 		await _update_branch(child, child_item)
 	
 	# Remove excess tree items
+	
 	if root_node.get_child_count(true) < len(child_items):
 		for i in range(root_node.get_child_count(true), len(child_items)):
-			child_items[i].free()
+			#print(i)
+			if i < len(child_items):
+				#print(child_items[i])
+				child_items[i].free()
 
 
 func _create_tree_item(node: Node, parent_item: TreeItem, internal: bool) -> TreeItem:
@@ -159,7 +163,8 @@ func _create_tree_item(node: Node, parent_item: TreeItem, internal: bool) -> Tre
 func _update_tree_item(node: Node, item: TreeItem, internal: bool) -> void:
 	assert(node is Node)
 	assert(item is TreeItem)
-
+	if not node.is_inside_tree():
+		return
 	var c_name := H.Scripts.get_class_name_or_class(node)
 	var display_text := _get_node_name_display_text(node)
 	
@@ -167,7 +172,7 @@ func _update_tree_item(node: Node, item: TreeItem, internal: bool) -> void:
 	if _is_internal_editor_class(c_name, node):
 		editor_node = true
 	item.set_icon(0, _get_icon(node))
-
+	
 	item.clear_buttons()
 	item.set_text(0, display_text)
 	item.set_tooltip_text(0, node.get_path())

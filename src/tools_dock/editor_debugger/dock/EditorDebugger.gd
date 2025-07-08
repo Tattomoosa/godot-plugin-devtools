@@ -53,6 +53,9 @@ func _disconnect_window_signals():
 		base_control.get_viewport().window_input.disconnect(_editor_input)
 	var disconnected_windows = []
 	for window in connected_windows:
+		if not is_instance_valid(window):
+			disconnected_windows.append(window)
+			continue
 		if window.window_input.is_connected(_editor_input):
 			window.window_input.disconnect(_editor_input)
 			disconnected_windows.append(window)
@@ -91,8 +94,12 @@ func _on_Tree_item_selected() -> void:
 
 func _on_Tree_item_mouse_selected(_position: Vector2, mouse_button_index: int) -> void:
 	if mouse_button_index == MOUSE_BUTTON_RIGHT:
+		if get_window() != EditorInterface.get_base_control().get_window():
+			_popup_menu.reparent(get_window().get_child(0))
+			await get_tree().process_frame
+		
 		_select_node()
-		_popup_menu.set_position(get_viewport().get_mouse_position())
+		_popup_menu.set_position(DisplayServer.mouse_get_position())
 		_popup_menu.popup()
 
 func _highlight_node(node: Node) -> void:

@@ -14,6 +14,14 @@
 	<br/>
 </div>
 
+## Fork Info
+	- Seemed to have cleared most issues related to 4.4.1 compatibility.
+	- Make compatible with Modular Browser instancing.
+	- Add multiwindow debugger support. If window is child of Editor Base Control, it can be found with F12.
+
+
+---
+
 > Complete and in a polished state but uses 4.5-only features (oops) and I don't know that I have it in me to backport when I'm using 4.5 exclusively.
 
 # Basic Overview
