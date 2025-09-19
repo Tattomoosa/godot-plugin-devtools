@@ -21,7 +21,12 @@ func _change_split() -> void:
 
 func _update_split_icon() -> void:
 	var split_icon := vsplit_icon
+	if not vsplit_icon:
+		split_icon = get_theme_icon("Panels2Alt", &"EditorIcons")
 	if split_container.vertical:
-		split_icon = hsplit_icon
+		if hsplit_icon:
+			split_icon = hsplit_icon
+		else:
+			split_icon = get_theme_icon("Panels2", &"EditorIcons")
 	if icon_override != split_icon:
 		icon_override = split_icon

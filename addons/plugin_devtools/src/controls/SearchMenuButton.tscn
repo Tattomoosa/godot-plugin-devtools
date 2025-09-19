@@ -2,10 +2,9 @@
 
 [ext_resource type="Script" uid="uid://gu52lrpt6a0x" path="res://addons/plugin_devtools/src/controls/SearchMenu.gd" id="1_256fh"]
 
-[sub_resource type="SVGTexture" id="SVGTexture_y220a"]
+[sub_resource type="DPITexture" id="DPITexture_y220a"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"12\" height=\"12\"><path fill=\"none\" stroke=\"#e0e0e0\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"m2 4 4 4 4-4\"/></svg>
 "
-base_scale = 2.0
 saturation = 2.0
 color_map = {
 Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
@@ -31,7 +30,7 @@ context_menu_enabled = false
 middle_mouse_paste_enabled = false
 selecting_enabled = false
 deselect_on_focus_loss_enabled = false
-right_icon = SubResource("SVGTexture_y220a")
+right_icon = SubResource("DPITexture_y220a")
 script = ExtResource("1_256fh")
 options = PackedStringArray("one", "two", "three")
 popup_panel_style = SubResource("StyleBoxFlat_udcms")
@@ -41,7 +40,6 @@ unique_name_in_owner = true
 auto_translate_mode = 2
 oversampling_override = 1.0
 size = Vector2i(404, 286)
-auto_translate = false
 theme_override_styles/panel = SubResource("StyleBoxEmpty_y220a")
 
 [node name="PanelContainer" type="PanelContainer" parent="PopupPanel"]
@@ -61,7 +59,7 @@ unique_name_in_owner = true
 layout_mode = 2
 clear_button_enabled = true
 middle_mouse_paste_enabled = false
-right_icon = SubResource("SVGTexture_y220a")
+right_icon = SubResource("DPITexture_y220a")
 
 [node name="PopupScroll" type="ScrollContainer" parent="PopupPanel/PanelContainer/VBoxContainer"]
 layout_mode = 2

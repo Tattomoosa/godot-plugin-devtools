@@ -11,10 +11,10 @@
 [ext_resource type="PackedScene" uid="uid://wa8xlibfil2s" path="res://addons/plugin_devtools/src/tools_dock/theme/color_map.tscn" id="10_cbrw0"]
 [ext_resource type="PackedScene" uid="uid://cek7ids6yldml" path="res://addons/plugin_devtools/src/tools_dock/theme/fonts.tscn" id="11_ixii8"]
 
-[sub_resource type="SVGTexture" id="SVGTexture_ib2jp"]
+[sub_resource type="DPITexture" id="DPITexture_ib2jp"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><linearGradient id=\"a\" x2=\"0\" y2=\"16\" gradientUnits=\"userSpaceOnUse\"><stop offset=\".188\" stop-color=\"#ff4545\"/><stop stop-color=\"#ffe345\"/><stop offset=\".313\" stop-color=\"#ffe345\"/><stop stop-color=\"#80ff45\"/><stop offset=\".438\" stop-color=\"#80ff45\"/><stop stop-color=\"#45ffa2\"/><stop offset=\".563\" stop-color=\"#45ffa2\"/><stop stop-color=\"#45d7ff\"/><stop offset=\".688\" stop-color=\"#45d7ff\"/><stop stop-color=\"#8045ff\"/><stop offset=\".813\" stop-color=\"#8045ff\"/><stop stop-color=\"#ff4596\"/></linearGradient><path fill=\"url(#a)\" d=\"M8 1c-.75 1.305-1.654 2.427-2.5 3.5-1 1.208-1.865 2.349-2.346 3.5-.24.57-.404 1.148-.404 1.75s.126 1.2.322 1.75C3.795 13.535 5.718 15 8 15s4.205-1.465 4.928-3.5c.196-.55.322-1.148.322-1.75s-.164-1.18-.404-1.75C12.365 6.849 11.5 5.708 10.5 4.5 9.654 3.427 8.753 2.305 8 1Z\"/></svg>
 "
-base_scale = 2.0
+base_scale = 1.0
 saturation = 2.0
 color_map = {
 Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
@@ -22,10 +22,10 @@ Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
 Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
 }
 
-[sub_resource type="SVGTexture" id="SVGTexture_wat77"]
+[sub_resource type="DPITexture" id="DPITexture_wat77"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"#e0e0e0\" d=\"M2 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm1 2h10v8H3zm6 2v1H8v1H6v1H5v1H4v1h8V8h-1V6h-1V5z\"/></svg>
 "
-base_scale = 2.0
+base_scale = 1.0
 saturation = 2.0
 color_map = {
 Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
@@ -33,10 +33,10 @@ Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
 Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
 }
 
-[sub_resource type="SVGTexture" id="SVGTexture_bb7lm"]
+[sub_resource type="DPITexture" id="DPITexture_bb7lm"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><linearGradient id=\"a\" x2=\"0\" y2=\"16\" gradientUnits=\"userSpaceOnUse\"><stop offset=\".188\" stop-color=\"#ff4545\"/><stop stop-color=\"#ffe345\"/><stop offset=\".313\" stop-color=\"#ffe345\"/><stop stop-color=\"#80ff45\"/><stop offset=\".438\" stop-color=\"#80ff45\"/><stop stop-color=\"#45ffa2\"/><stop offset=\".563\" stop-color=\"#45ffa2\"/><stop stop-color=\"#45d7ff\"/><stop offset=\".688\" stop-color=\"#45d7ff\"/><stop stop-color=\"#8045ff\"/><stop offset=\".813\" stop-color=\"#8045ff\"/><stop stop-color=\"#ff4596\"/></linearGradient><path fill=\"url(#a)\" d=\"M1 14a1 1 0 0 0 1 1h6.037a5.044 5.044 0 0 1-.92-2A4.735 4.735 0 0 1 7 12c0-.356.045-.687.117-1 .18-.784.546-1.435.938-2 .14-.203.285-.402.424-.584.386-.505.763-.968 1.103-1.416.257-.338.495-.67.686-1a2 2 0 0 1 3.465 0c.188.327.428.66.685 1 .186.246.38.494.582.75V2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1Zm11-7c-.429.746-.946 1.387-1.429 2-.571.69-1.066 1.342-1.34 2-.138.326-.231.656-.231 1s.072.686.184 1c.413 1.163 1.512 2 2.816 2s2.402-.837 2.816-2c.112-.314.184-.656.184-1s-.094-.674-.231-1c-.275-.658-.77-1.31-1.34-2-.484-.613-1-1.254-1.43-2z\"/></svg>
 "
-base_scale = 2.0
+base_scale = 1.0
 saturation = 2.0
 color_map = {
 Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
@@ -51,7 +51,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 metadata/_tab_index = 0
-metadata/icon = SubResource("SVGTexture_ib2jp")
+metadata/icon = SubResource("DPITexture_ib2jp")
 metadata/_edit_lock_ = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
@@ -91,12 +91,12 @@ script = ExtResource("1_y220a")
 
 [node name="Icons" parent="ResourceType" instance=ExtResource("2_xviqr")]
 layout_mode = 2
-metadata/icon = SubResource("SVGTexture_wat77")
+metadata/icon = SubResource("DPITexture_wat77")
 
 [node name="Styles" parent="ResourceType" instance=ExtResource("3_qnip2")]
 visible = false
 layout_mode = 2
-metadata/icon = SubResource("SVGTexture_bb7lm")
+metadata/icon = SubResource("DPITexture_bb7lm")
 
 [node name="Colors" parent="ResourceType" instance=ExtResource("7_wxbfa")]
 visible = false

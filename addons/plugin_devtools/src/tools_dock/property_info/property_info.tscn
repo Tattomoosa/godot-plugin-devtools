@@ -4,10 +4,10 @@
 [ext_resource type="PackedScene" uid="uid://docovj7syjbn0" path="res://addons/plugin_devtools/src/tools_dock/property_info/property_info_explorer.tscn" id="2_nqm23"]
 [ext_resource type="PackedScene" uid="uid://di5jb2703gpct" path="res://addons/plugin_devtools/src/tools_dock/property_info/property_info_builder.tscn" id="3_2tjb4"]
 
-[sub_resource type="SVGTexture" id="SVGTexture_16pao"]
+[sub_resource type="DPITexture" id="DPITexture_16pao"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"#fff\" d=\"M8 1a7 7 0 0 0 0 14A7 7 0 0 0 8 1zM7 4h2v2H7zm0 3h2v5H7z\"/></svg>
 "
-base_scale = 2.0
+base_scale = 1.0
 saturation = 2.0
 color_map = {
 Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
@@ -24,7 +24,7 @@ grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 metadata/_tab_index = 1
-metadata/icon = SubResource("SVGTexture_16pao")
+metadata/icon = SubResource("DPITexture_16pao")
 
 [node name="TabContainer" type="TabContainer" parent="."]
 layout_mode = 2

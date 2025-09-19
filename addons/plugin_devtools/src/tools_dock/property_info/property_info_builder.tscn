@@ -12,10 +12,10 @@
 [ext_resource type="Script" uid="uid://esqxcw7d4l6a" path="res://addons/plugin_devtools/src/controls/CopyNotifier.gd" id="10_pbmo5"]
 [ext_resource type="Script" uid="uid://cgayqbdimevbw" path="res://addons/plugin_devtools/src/tools_dock/property_info/PropertyInfoPrinter.gd" id="11_l5m10"]
 
-[sub_resource type="SVGTexture" id="SVGTexture_8wh27"]
+[sub_resource type="DPITexture" id="DPITexture_8wh27"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"12\"><path fill=\"#e0e0e0\" d=\"M8 2v2h2V2zm3 0v5a3 3 0 0 0 3 3h1V8h-1a1 1 0 0 1-1-1V2zM1 4v6h2V6h1a1 1 0 0 1 1 1v3h2V7a3 3 0 0 0-3-3zm7 2v4h2V6z\"/></svg>
 "
-base_scale = 2.0
+base_scale = 1.0
 saturation = 2.0
 color_map = {
 Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
@@ -23,10 +23,10 @@ Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
 Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
 }
 
-[sub_resource type="SVGTexture" id="SVGTexture_6ssdj"]
+[sub_resource type="DPITexture" id="DPITexture_6ssdj"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"#6f91f0\" d=\"M0 4v8h2a3 3 0 0 0 2.5-1.346 3 3 0 0 0 4.5.578 3 3 0 0 0 4.5-.578A3 3 0 0 0 16 12v-2a1 1 0 0 1-1-1V4h-2v2.77a3 3 0 0 0-4 0 3 3 0 0 0-4.5.578A3 3 0 0 0 2 6V4zm2 4a1 1 0 0 1 0 2zm5 0a1 1 0 0 1 0 2 1 1 0 0 1 0-2zm4 0a1 1 0 0 1 0 2 1 1 0 0 1 0-2z\"/></svg>
 "
-base_scale = 2.0
+base_scale = 1.0
 saturation = 2.0
 color_map = {
 Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
@@ -34,10 +34,10 @@ Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
 Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
 }
 
-[sub_resource type="SVGTexture" id="SVGTexture_fj1kj"]
+[sub_resource type="DPITexture" id="DPITexture_fj1kj"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"12\"><path fill=\"#5abbef\" d=\"m1 2v2h2v-2zm11 0v5a3 3 0 0 0 3 3h1v-2h-1a1 1 0 0 1 -1-1v-1h2v-2h-2v-2zm-8 2v6h2v-4h1a1 1 0 0 1 1 1v3h2v-3a3 3 0 0 0 -3-3h-1zm-3 2v4h2v-4z\"/></svg>
 "
-base_scale = 2.0
+base_scale = 1.0
 saturation = 2.0
 color_map = {
 Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
@@ -45,10 +45,10 @@ Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
 Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
 }
 
-[sub_resource type="SVGTexture" id="SVGTexture_ba3mc"]
+[sub_resource type="DPITexture" id="DPITexture_ba3mc"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"#35d4f4\" d=\"M3 4a3 3 0 0 0-3 3v5h2v-2h2V8H2V7a1 1 0 0 1 1-1h1V4zm3 0v5a3 3 0 0 0 3 3h1v-2H9a1 1 0 0 1-1-1V4zm6 0v5a3 3 0 0 0 3 3h1v-2h-1a1 1 0 0 1-1-1V8h2V6h-2V4z\"/></svg>
 "
-base_scale = 2.0
+base_scale = 1.0
 saturation = 2.0
 color_map = {
 Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
@@ -56,10 +56,10 @@ Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
 Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
 }
 
-[sub_resource type="SVGTexture" id="SVGTexture_6n1lw"]
+[sub_resource type="DPITexture" id="DPITexture_6n1lw"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"12\"><path fill=\"#4593ec\" d=\"M7 2H4a2.5 2.5 0 0 0 0 5 .5.5 0 0 1 0 1H1v2h3a2.5 2.5 0 0 0 0-5 .5.5 0 0 1 0-1h3zm1 0v5a3 3 0 0 0 3 3V8a1 1 0 0 1-1-1V6h1V4h-1V2zm4 8h2V7a1 1 0 0 1 1-1V4a3 3 0 0 0-3 3z\"/></svg>
 "
-base_scale = 2.0
+base_scale = 1.0
 saturation = 2.0
 color_map = {
 Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
@@ -67,10 +67,10 @@ Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
 Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
 }
 
-[sub_resource type="SVGTexture" id="SVGTexture_li14u"]
+[sub_resource type="DPITexture" id="DPITexture_li14u"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"12\"><path fill=\"#ac73f1\" d=\"M12 2v2h1a1 1 0 0 1 0 2 2 2 0 0 0-2 2v2h5V8h-3a3 3 0 0 0 0-6zM1 4v6h2a3 3 0 0 0 3-3V4H4v3a1 1 0 0 1-1 1V4zm9 6V8H9a1 1 0 0 1 0-2h1V4H9a3 3 0 0 0 0 6z\"/><path fill=\"#fff\" fill-opacity=\".4\" d=\"M12 2v2h1a1 1 0 0 1 0 2 2 2 0 0 0-2 2v2h5V8h-3a3 3 0 0 0 0-6z\"/></svg>
 "
-base_scale = 2.0
+base_scale = 1.0
 saturation = 2.0
 color_map = {
 Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
@@ -78,10 +78,10 @@ Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
 Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
 }
 
-[sub_resource type="SVGTexture" id="SVGTexture_u12x1"]
+[sub_resource type="DPITexture" id="DPITexture_u12x1"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"12\"><path fill=\"#ac73f1\" d=\"M8 2v2h1a1 1 0 0 1 0 2 2 2 0 0 0-2 2v2h5V8H9a3 3 0 0 0 0-6zM1 4v6h2a3 3 0 0 0 3-3V4H4v3a1 1 0 0 1-1 1V4z\"/><path fill=\"#fff\" fill-opacity=\".4\" d=\"M8 2v2h1a1 1 0 0 1 0 2 2 2 0 0 0-2 2v2h5V8H9a3 3 0 0 0 0-6z\"/><path fill=\"#5abbef\" d=\"M13 2v2h2V2zm0 4v4h2V6z\"/></svg>
 "
-base_scale = 2.0
+base_scale = 1.0
 saturation = 2.0
 color_map = {
 Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
@@ -89,10 +89,10 @@ Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
 Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
 }
 
-[sub_resource type="SVGTexture" id="SVGTexture_2oyd2"]
+[sub_resource type="DPITexture" id="DPITexture_2oyd2"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"12\"><path fill=\"#f1738f\" d=\"M13 2v2h-1a3 3 0 0 0-2.5 1.346A3 3 0 1 0 7 10h1V8H7a1 1 0 0 1-1-1h3a3 3 0 0 0 3 3h1V8h-1a1 1 0 0 1 0-2h1v1a3 3 0 0 0 3 3V8a1 1 0 0 1-1-1V6h1V4h-1V2zM3 4a3 3 0 0 0-3 3v3h2V7a1 1 0 0 1 1-1h1V4z\"/></svg>
 "
-base_scale = 2.0
+base_scale = 1.0
 saturation = 2.0
 color_map = {
 Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
@@ -100,10 +100,10 @@ Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
 Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
 }
 
-[sub_resource type="SVGTexture" id="SVGTexture_u23o0"]
+[sub_resource type="DPITexture" id="DPITexture_u23o0"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"12\"><path fill=\"#f1738f\" d=\"M9 2v2H8a3 3 0 0 0 0 6h1V8H8a1 1 0 0 1 0-2h1v1a3 3 0 0 0 3 3V8a1 1 0 0 1-1-1V6h1V4h-1V2zM4 4a3 3 0 0 0-3 3v3h2V7a1 1 0 0 1 1-1h1V4z\"/><path fill=\"#5abbef\" d=\"M13 2v2h2V2zm0 4v4h2V6z\"/></svg>
 "
-base_scale = 2.0
+base_scale = 1.0
 saturation = 2.0
 color_map = {
 Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
@@ -111,10 +111,10 @@ Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
 Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
 }
 
-[sub_resource type="SVGTexture" id="SVGTexture_pbmo5"]
+[sub_resource type="DPITexture" id="DPITexture_pbmo5"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"12\"><path fill=\"#de66f0\" d=\"M11 2v2h2a1 1 0 0 1-1 1v2a1 1 0 0 1 0 2h-1v2h1a3 3 0 0 0 2.232-5A3 3 0 0 0 15 4V2zM1 4v6h2a3 3 0 0 0 3-3V4H4v3a1 1 0 0 1-1 1V4zm9 6V8H9a1 1 0 0 1 0-2h1V4H9a3 3 0 0 0 0 6z\"/><path fill=\"#fff\" fill-opacity=\".4\" d=\"M11 2v2h2a1 1 0 0 1-1 1v2a1 1 0 0 1 0 2h-1v2h1a3 3 0 0 0 2.232-5A3 3 0 0 0 15 4V2z\"/></svg>
 "
-base_scale = 2.0
+base_scale = 1.0
 saturation = 2.0
 color_map = {
 Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
@@ -122,10 +122,10 @@ Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
 Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
 }
 
-[sub_resource type="SVGTexture" id="SVGTexture_l5m10"]
+[sub_resource type="DPITexture" id="DPITexture_l5m10"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"12\"><path fill=\"#de66f0\" d=\"M8 2v2h2a1 1 0 0 1-1 1v2a1 1 0 0 1 0 2H8v2h1a3 3 0 0 0 2.232-5A3 3 0 0 0 12 4V2zM1 4v6h2a3 3 0 0 0 3-3V4H4v3a1 1 0 0 1-1 1V4z\"/><path fill=\"#fff\" fill-opacity=\".4\" d=\"M8 2v2h2a1 1 0 0 1-1 1v2a1 1 0 0 1 0 2H8v2h1a3 3 0 0 0 2.232-5A3 3 0 0 0 12 4V2z\"/><path fill=\"#5abbef\" d=\"M13 2v2h2V2zm0 4v4h2V6z\"/></svg>
 "
-base_scale = 2.0
+base_scale = 1.0
 saturation = 2.0
 color_map = {
 Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
@@ -133,10 +133,10 @@ Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
 Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
 }
 
-[sub_resource type="SVGTexture" id="SVGTexture_elrb6"]
+[sub_resource type="DPITexture" id="DPITexture_elrb6"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"12\"><path fill=\"#b9ec41\" d=\"M0 2v2h2v6h2V4h3a1 1 0 0 1 0 2 2 2 0 0 0-2 2v2h7a4 4 0 0 0 0-8h-2v6H7a3 3 0 0 0 0-6zm12 2a2 2 0 0 1 0 4z\"/><path fill=\"#fff\" fill-opacity=\".4\" d=\"M6.5 2v2H7a1 1 0 0 1 0 2 2 2 0 0 0-2 2v2h5V8H7a3 3 0 0 0 0-6h-.5z\"/></svg>
 "
-base_scale = 2.0
+base_scale = 1.0
 saturation = 2.0
 color_map = {
 Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
@@ -144,10 +144,10 @@ Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
 Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
 }
 
-[sub_resource type="SVGTexture" id="SVGTexture_l1l1e"]
+[sub_resource type="DPITexture" id="DPITexture_l1l1e"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"12\"><path fill=\"#f066bd\" d=\"M11 3v5h3v3h2V2h-2v4h-1V3zM1 4v6h2a3 3 0 0 0 3-3V4H4v3a1 1 0 0 1-1 1V4zm9 6V8H9a1 1 0 0 1 0-2h1V4H9a3 3 0 0 0 0 6z\"/><path fill=\"#fff\" fill-opacity=\".4\" d=\"M11 3v5h3v3h2V2h-2v4h-1V3z\"/></svg>
 "
-base_scale = 2.0
+base_scale = 1.0
 saturation = 2.0
 color_map = {
 Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
@@ -155,10 +155,10 @@ Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
 Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
 }
 
-[sub_resource type="SVGTexture" id="SVGTexture_mjxk3"]
+[sub_resource type="DPITexture" id="DPITexture_mjxk3"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"12\"><path fill=\"#f066bd\" d=\"M7 3v5h3v3h2V2h-2v4H9V3zM1 4v6h2a3 3 0 0 0 3-3V4H4v3a1 1 0 0 1-1 1V4z\"/><path fill=\"#fff\" fill-opacity=\".4\" d=\"M7 3v5h3v3h2V2h-2v4H9V3z\"/><path fill=\"#5abbef\" d=\"M13 2v2h2V2zm0 4v4h2V6z\"/></svg>
 "
-base_scale = 2.0
+base_scale = 1.0
 saturation = 2.0
 color_map = {
 Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
@@ -166,10 +166,10 @@ Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
 Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
 }
 
-[sub_resource type="SVGTexture" id="SVGTexture_gh85k"]
+[sub_resource type="DPITexture" id="DPITexture_gh85k"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"12\"><path fill=\"#f74949\" d=\"M1 2v8h2V8a3 3 0 0 0 0-6zm6 0v5a3 3 0 0 0 3 3V8a1 1 0 0 1-1-1V2zM3 4a1 1 0 0 1 0 2zm8 0v6h2V6a1 1 0 0 1 1 1v3h2V7a3 3 0 0 0-3-3z\"/></svg>
 "
-base_scale = 2.0
+base_scale = 1.0
 saturation = 2.0
 color_map = {
 Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
@@ -177,10 +177,10 @@ Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
 Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
 }
 
-[sub_resource type="SVGTexture" id="SVGTexture_ipjrw"]
+[sub_resource type="DPITexture" id="DPITexture_ipjrw"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"12\"><path fill=\"#ec418e\" d=\"M3 3a3 3 0 0 0 0 6v2h2V8.236A3 3 0 0 0 7 9h2v-.764A3 3 0 0 0 11 9h2V6a3 3 0 0 0 3 3V7a1 1 0 0 1-1-1V5h1V3h-1V1h-2v2h-2a3 3 0 0 0-2 .764V3H7v4a1 1 0 0 1-1-1V3zm0 4a1 1 0 0 1 0-2zm8 0a1 1 0 0 1 0-2z\"/><path fill=\"#fff\" fill-opacity=\".4\" d=\"M4 3v3a3 3 0 0 0 3 3h2V3H7v4a1 1 0 0 1-1-1V3z\"/></svg>
 "
-base_scale = 2.0
+base_scale = 1.0
 saturation = 2.0
 color_map = {
 Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
@@ -188,10 +188,10 @@ Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
 Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
 }
 
-[sub_resource type="SVGTexture" id="SVGTexture_gajp8"]
+[sub_resource type="DPITexture" id="DPITexture_gajp8"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"12\"><path fill=\"#ee5677\" d=\"M5 1a3 3 0 0 0-2.223 5.012A3 3 0 0 0 3 12h2V7h2V1H5zm6 0v5.174A3 3 0 0 0 10 6V4H8v8h2a3 3 0 0 0 3-3 3 3 0 0 0 0-6V1h-2zM5 3v2a1 1 0 0 1 0-2zm8 2a1 1 0 0 1 0 2zM3 8v2a1 1 0 0 1 0-2zm7 0a1 1 0 0 1 0 2z\"/><path fill=\"#fff\" fill-opacity=\".235\" d=\"M8 4v8h2a3 3 0 0 0 0-6V4zM3 6a3 3 0 0 0 0 6h2V6zm0 2v2a1 1 0 0 1 0-2zm7 0a1 1 0 0 1 0 2z\"/></svg>
 "
-base_scale = 2.0
+base_scale = 1.0
 saturation = 2.0
 color_map = {
 Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
@@ -199,10 +199,10 @@ Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
 Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
 }
 
-[sub_resource type="SVGTexture" id="SVGTexture_uh0t2"]
+[sub_resource type="DPITexture" id="DPITexture_uh0t2"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"12\"><path fill=\"#e1ec41\" d=\"M0 2v8h2a3 3 0 0 0 0-6V2zm10 0v2h2V2zM7 4a2 2 0 0 0 0 4H5v2h2a2 2 0 0 0 0-4h2V4zm7 0a2 2 0 0 0 0 4h-2V6h-2v4h4a2 2 0 0 0 0-4h2V4zM2 6a1 1 0 0 1 1 1 1 1 0 0 1-1 1z\"/><path fill=\"#fff\" fill-opacity=\".4\" d=\"M10 2v2h2V2zm0 4v4h2V6z\"/></svg>
 "
-base_scale = 2.0
+base_scale = 1.0
 saturation = 2.0
 color_map = {
 Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
@@ -210,10 +210,10 @@ Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
 Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
 }
 
-[sub_resource type="SVGTexture" id="SVGTexture_wavv2"]
+[sub_resource type="DPITexture" id="DPITexture_wavv2"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"12\"><path fill=\"#f68f45\" d=\"M4 4h3.349a1 1.267 0 0 1-1 1.267v1a.866.866 0 0 1 0 1.732h-1v2h1a2.81 2.81 0 0 0 2.232-4.734A1.32 1.32 0 0 0 9.345 4V2H0v2h2v6h2zm6 6h2a4 4 0 0 0 0-8h-2zm2-6a2 2 0 0 1 0 4z\"/><path fill=\"#fff\" fill-opacity=\".4\" d=\"M5.5 4h1.849a1 1.267 0 0 1-1 1.267v1a.866.866 0 0 1 0 1.732h-1v2h1a2.81 2.81 0 0 0 2.232-4.734A1.32 1.32 0 0 0 9.345 4V2H5.5z\"/></svg>
 "
-base_scale = 2.0
+base_scale = 1.0
 saturation = 2.0
 color_map = {
 Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
@@ -221,10 +221,10 @@ Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
 Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
 }
 
-[sub_resource type="SVGTexture" id="SVGTexture_p4mb4"]
+[sub_resource type="DPITexture" id="DPITexture_p4mb4"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"12\"><path fill=\"#44bd44\" d=\"M0 2v8h2V8a3 3 0 0 0 2-.779V10h2V7a1 1 0 0 1 1-1h1V4H7a3 3 0 0 0-2.02.795A3 3 0 0 0 2 2zm8 4v2a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1a2 2 0 0 0-2 2zm6-4v2h2V2zM2 4a1 1 0 0 1 0 2zm8 2h1v2h-1zm4 0v3a1 1 0 0 1-1 1h-1v2h1a3 3 0 0 0 3-3V6z\"/><path fill=\"#fff\" fill-opacity=\".4\" d=\"M7 4a3 3 0 0 0-3 3v3h2V7a1 1 0 0 1 1-1h1V4z\"/></svg>
 "
-base_scale = 2.0
+base_scale = 1.0
 saturation = 2.0
 color_map = {
 Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
@@ -232,10 +232,10 @@ Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
 Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
 }
 
-[sub_resource type="SVGTexture" id="SVGTexture_4mwly"]
+[sub_resource type="DPITexture" id="DPITexture_4mwly"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"12\"><path fill=\"#ff5f5f\" d=\"M4 4a3 3 0 0 0 0 6h1V8H4a1 1 0 0 1 0-2h1V4z\"/><path fill=\"#5fff97\" d=\"M6 2v5a3 3 0 0 0 3 3h1V8H9a1 1 0 0 1-1-1V2z\"/><path fill=\"#5fb2ff\" d=\"M14 4a3 3 0 0 0-3 3v3h2V7a1 1 0 0 1 1-1h1V4z\"/></svg>
 "
-base_scale = 2.0
+base_scale = 1.0
 saturation = 2.0
 color_map = {
 Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
@@ -243,10 +243,10 @@ Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
 Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
 }
 
-[sub_resource type="SVGTexture" id="SVGTexture_b7vhv"]
+[sub_resource type="DPITexture" id="DPITexture_b7vhv"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"12\"><path fill=\"#4593ec\" d=\"M3 2a2.5 2.5 0 0 0 0 5 .5.5 0 0 1 0 1H0v2h3a2.5 2.5 0 0 0 0-5 .5.5 0 0 1 0-1h3v3a3 3 0 0 0 3 3h3V6a2 2 0 0 1 2 2v2h2V8a4 4 0 0 0-4-4H8V2zm7 4v2H9a1 1 0 0 1-1-1V6z\"/><path fill=\"#fff\" fill-opacity=\".4\" d=\"M6 2v5a3 3 0 0 0 3 3h1V8H9a1 1 0 0 1-1-1V6h2V4H8V2z\"/></svg>
 "
-base_scale = 2.0
+base_scale = 1.0
 saturation = 2.0
 color_map = {
 Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
@@ -254,10 +254,10 @@ Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
 Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
 }
 
-[sub_resource type="SVGTexture" id="SVGTexture_lpnm5"]
+[sub_resource type="DPITexture" id="DPITexture_lpnm5"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"12\"><path fill=\"#417aec\" d=\"M0 2v8h2V8a3 3 0 0 0 0-6zm6 0v5a3 3 0 0 0 3 3h1V8H9a1 1 0 0 1-1-1V6h2V4H8V2zm5 0v8h2V6a1 1 0 0 1 1 1v3h2V7a3 3 0 0 0-3-3V2zM2 4a1 1 0 0 1 0 2z\"/></svg>
 "
-base_scale = 2.0
+base_scale = 1.0
 saturation = 2.0
 color_map = {
 Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
@@ -265,10 +265,10 @@ Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
 Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
 }
 
-[sub_resource type="SVGTexture" id="SVGTexture_xmqhy"]
+[sub_resource type="DPITexture" id="DPITexture_xmqhy"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"12\"><path fill=\"#41ec80\" d=\"M7 2v2h2V2zm7 0v2h-1a3 3 0 0 0 0 6h3V2zM4 4a3 3 0 0 0-3 3v3h2V7a1 1 0 0 1 1-1h1V4zm3 2v4h2V6zm6 0h1v2h-1a1 1 0 0 1 0-2z\"/></svg>
 "
-base_scale = 2.0
+base_scale = 1.0
 saturation = 2.0
 color_map = {
 Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
@@ -276,10 +276,10 @@ Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
 Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
 }
 
-[sub_resource type="SVGTexture" id="SVGTexture_mkovb"]
+[sub_resource type="DPITexture" id="DPITexture_mkovb"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"#e0e0e0\" d=\"M1.553 4.104A1 1 0 0 0 1 5v6a1 1 0 0 0 .553.895l6 3a1 1 0 0 0 .894 0l6-3A1 1 0 0 0 15 11V5a1 1 0 0 0-.553-.894l-6-3a1 1 0 0 0-.894 0zm6.447-1 3.764 1.882L8 6.868 4.236 4.986zm-5 3.5 4 2v3.766l-4-2z\"/></svg>
 "
-base_scale = 2.0
+base_scale = 1.0
 saturation = 2.0
 color_map = {
 Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
@@ -287,10 +287,10 @@ Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
 Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
 }
 
-[sub_resource type="SVGTexture" id="SVGTexture_0tocu"]
+[sub_resource type="DPITexture" id="DPITexture_0tocu"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"#e0e0e0\" d=\"m12 1c-2 2-4 4-7 4h-4v5h4c3 0 5 2 7 4zm1 4v5c2.59-.016 2.59-4.985 0-5zm-11 6v4h2l1-4z\"/></svg>
 "
-base_scale = 2.0
+base_scale = 1.0
 saturation = 2.0
 color_map = {
 Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
@@ -298,10 +298,10 @@ Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
 Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
 }
 
-[sub_resource type="SVGTexture" id="SVGTexture_jak2h"]
+[sub_resource type="DPITexture" id="DPITexture_jak2h"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"#ff5f5f\" d=\"m1 3v10h2 4v-2h-4v-6h4v-2h-4zm9 1v3h-5v2h5v3l2.5-2 2.5-2-2.5-2z\"/></svg>
 "
-base_scale = 2.0
+base_scale = 1.0
 saturation = 2.0
 color_map = {
 Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
@@ -309,10 +309,10 @@ Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
 Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
 }
 
-[sub_resource type="SVGTexture" id="SVGTexture_tvtkf"]
+[sub_resource type="DPITexture" id="DPITexture_tvtkf"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"12\"><path fill=\"#54ed9e\" d=\"M3 2v2a3 3 0 0 0 0 6h2V2zm3 0v2h2V2zm7 0v5a3 3 0 0 0 3 3V8a1 1 0 0 1-1-1V6h1V4h-1V2zm-2 2a3 3 0 0 0 0 6h1V8h-1a1 1 0 0 1 0-2h1V4zM8 7V6H6v4h2zM3 6v2a1 1 0 0 1 0-2z\"/></svg>
 "
-base_scale = 2.0
+base_scale = 1.0
 saturation = 2.0
 color_map = {
 Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
@@ -320,10 +320,10 @@ Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
 Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
 }
 
-[sub_resource type="SVGTexture" id="SVGTexture_b2yqi"]
+[sub_resource type="DPITexture" id="DPITexture_b2yqi"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"12\"><path fill=\"#e0e0e0\" d=\"M4 4a3 3 0 0 0 0 6h2V4zm6 0a3 3 0 0 0-3 3v3h2V7a1 1 0 0 1 1-1h1V4zm4 0a3 3 0 0 0-3 3v3h2V7a1 1 0 0 1 1-1h1V4zM4 6v2a1 1 0 0 1 0-2z\"/></svg>
 "
-base_scale = 2.0
+base_scale = 1.0
 saturation = 2.0
 color_map = {
 Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
@@ -331,10 +331,10 @@ Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
 Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
 }
 
-[sub_resource type="SVGTexture" id="SVGTexture_wxi83"]
+[sub_resource type="DPITexture" id="DPITexture_wxi83"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"12\"><path fill=\"#e0e0e0\" d=\"M0 0v12h4v-2H2V2h2V0zm12 0v2h2v8h-2v2h4V0z\"/><path fill=\"#5fff97\" d=\"M5 3a3 3 0 0 0-3 3v3h2V6a1 1 0 0 1 1-1h1v4h2a3 3 0 0 0 1-.176V9h2a3 3 0 0 0 3-3V3h-2v3a1 1 0 0 1-1 1V3H9v3a1 1 0 0 1-1 1V3z\"/><path fill=\"#fff\" fill-opacity=\".4\" d=\"M6 9V3h2v4a1 1 0 0 0 1-1V3h2v4a1 1 0 0 0 1-1V3h2v3a3 3 0 0 1-3 3H9v-.176A3 3 0 0 1 8 9z\"/></svg>
 "
-base_scale = 2.0
+base_scale = 1.0
 saturation = 2.0
 color_map = {
 Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
@@ -342,10 +342,10 @@ Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
 Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
 }
 
-[sub_resource type="SVGTexture" id="SVGTexture_gbot3"]
+[sub_resource type="DPITexture" id="DPITexture_gbot3"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"12\"><path fill=\"#e0e0e0\" d=\"M0 0v12h4v-2H2V2h2V0zm12 0v2h2v8h-2v2h4V0z\"/><path fill=\"#5abbef\" d=\"M3 2v2h2V2zm2 2v2H3v4h4V6a1 1 0 0 1 1 1v3h2V7a3 3 0 0 0-3-3zm5 3a3 3 0 0 0 3 3V8a1 1 0 0 1-1-1V6h1V4h-1V2h-2z\"/><path fill=\"#fff\" fill-opacity=\".4\" d=\"M5 4v6h2V6a1 1 0 0 1 1 1v3h2V7a3 3 0 0 0-3-3z\"/></svg>
 "
-base_scale = 2.0
+base_scale = 1.0
 saturation = 2.0
 color_map = {
 Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
@@ -353,10 +353,10 @@ Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
 Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
 }
 
-[sub_resource type="SVGTexture" id="SVGTexture_woa4a"]
+[sub_resource type="DPITexture" id="DPITexture_woa4a"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"12\"><path fill=\"#e0e0e0\" d=\"M0 0v12h4v-2H2V2h2V0zm12 0v2h2v8h-2v2h4V0z\"/><path fill=\"#5abbef\" d=\"M3 2v2h2V2zm2 2v2H3v4h4V6a1 1 0 0 1 1 1v3h2V7a3 3 0 0 0-3-3zm5 3a3 3 0 0 0 3 3V8a1 1 0 0 1-1-1V6h1V4h-1V2h-2z\"/><path fill=\"#fff\" fill-opacity=\".4\" d=\"M5 4v6h2V6a1 1 0 0 1 1 1v3h2V7a3 3 0 0 0-3-3z\"/></svg>
 "
-base_scale = 2.0
+base_scale = 1.0
 saturation = 2.0
 color_map = {
 Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
@@ -364,10 +364,10 @@ Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
 Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
 }
 
-[sub_resource type="SVGTexture" id="SVGTexture_w6mls"]
+[sub_resource type="DPITexture" id="DPITexture_w6mls"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"12\"><path fill=\"#e0e0e0\" d=\"M0 0v12h4v-2H2V2h2V0zm12 0v2h2v8h-2v2h4V0z\"/><path fill=\"#35d4f4\" d=\"M6 2a3 3 0 0 0-3 3v5h2V8h1V6H5V5a1 1 0 0 1 1-1zm1 0v5a3 3 0 0 0 3 3V8a1 1 0 0 1-1-1V2zm3 0v5a3 3 0 0 0 3 3V8a1 1 0 0 1-1-1V6h1V4h-1V2z\"/><path fill=\"#fff\" fill-opacity=\".4\" d=\"M7 2v5a3 3 0 0 0 3 3V8a1 1 0 0 1-1-1V2z\"/></svg>
 "
-base_scale = 2.0
+base_scale = 1.0
 saturation = 2.0
 color_map = {
 Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
@@ -375,10 +375,10 @@ Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
 Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
 }
 
-[sub_resource type="SVGTexture" id="SVGTexture_tiieg"]
+[sub_resource type="DPITexture" id="DPITexture_tiieg"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"12\"><path fill=\"#e0e0e0\" d=\"M0 0v12h4v-2H2V2h2V0zm12 0v2h2v8h-2v2h4V0z\"/><path fill=\"#35d4f4\" d=\"M6 2a3 3 0 0 0-3 3v5h2V8h1V6H5V5a1 1 0 0 1 1-1zm1 0v5a3 3 0 0 0 3 3V8a1 1 0 0 1-1-1V2zm3 0v5a3 3 0 0 0 3 3V8a1 1 0 0 1-1-1V6h1V4h-1V2z\"/><path fill=\"#fff\" fill-opacity=\".4\" d=\"M7 2v5a3 3 0 0 0 3 3V8a1 1 0 0 1-1-1V2z\"/></svg>
 "
-base_scale = 2.0
+base_scale = 1.0
 saturation = 2.0
 color_map = {
 Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
@@ -386,10 +386,10 @@ Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
 Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
 }
 
-[sub_resource type="SVGTexture" id="SVGTexture_x0yjr"]
+[sub_resource type="DPITexture" id="DPITexture_x0yjr"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"12\"><path fill=\"#e0e0e0\" d=\"M0 0v12h4v-2H2V2h2V0zm12 0v2h2v8h-2v2h4V0z\"/><path fill=\"#4593ec\" d=\"M5 2a2.5 2.5 0 0 0 0 5 .5.5 0 0 1 0 1H2v2h3a2.5 2.5 0 0 0 0-5 .5.5 0 0 1 0-1h3v3a3 3 0 0 0 3 3h2V7a1 1 0 0 1 1-1V4a3 3 0 0 0-3 3v1a1 1 0 0 1-1-1V6h1V4h-1V2z\"/><path fill=\"#fff\" fill-opacity=\".4\" d=\"M8 2v5a3 3 0 0 0 3 3V8a1 1 0 0 1-1-1V6h1V4h-1V2z\"/></svg>
 "
-base_scale = 2.0
+base_scale = 1.0
 saturation = 2.0
 color_map = {
 Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
@@ -397,10 +397,10 @@ Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
 Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
 }
 
-[sub_resource type="SVGTexture" id="SVGTexture_w6o7t"]
+[sub_resource type="DPITexture" id="DPITexture_w6o7t"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"12\"><path fill=\"#e0e0e0\" d=\"M0 0v12h4v-2H2V2h2V0zm12 0v2h2v8h-2v2h4V0z\"/><path fill=\"#ac73f1\" d=\"M9 2v2h1a1 1 0 0 1 0 2 2 2 0 0 0-2 2v2h5V8h-3a3 3 0 0 0 0-6zM3 3v6h2a3 3 0 0 0 3-3V3H6v3a1 1 0 0 1-1 1V3z\"/><path fill=\"#fff\" fill-opacity=\".4\" d=\"M9 2v2h1a1 1 0 0 1 0 2 2 2 0 0 0-2 2v2h5V8h-3a3 3 0 0 0 0-6z\"/></svg>
 "
-base_scale = 2.0
+base_scale = 1.0
 saturation = 2.0
 color_map = {
 Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
@@ -408,10 +408,10 @@ Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
 Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
 }
 
-[sub_resource type="SVGTexture" id="SVGTexture_nmo1t"]
+[sub_resource type="DPITexture" id="DPITexture_nmo1t"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"12\"><path fill=\"#e0e0e0\" d=\"M0 0v12h4v-2H2V2h2V0zm12 0v2h2v8h-2v2h4V0z\"/><path fill=\"#de66f0\" d=\"M8 1v2h2a1 1 0 0 1-1 1v2a1 1 0 0 1 0 2H8v2h1a3 3 0 0 0 2.232-5A3 3 0 0 0 12 3V1zm0 2H6v3a1 1 0 0 1-1 1V3H3v6h2a3 3 0 0 0 3-3z\"/><path fill=\"#fff\" fill-opacity=\".4\" d=\"M8 1v2h2a1 1 0 0 1-1 1v2a1 1 0 0 1 0 2H8v2h1a3 3 0 0 0 2.232-5A3 3 0 0 0 12 3V1z\"/></svg>
 "
-base_scale = 2.0
+base_scale = 1.0
 saturation = 2.0
 color_map = {
 Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
@@ -419,10 +419,10 @@ Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
 Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
 }
 
-[sub_resource type="SVGTexture" id="SVGTexture_xe8it"]
+[sub_resource type="DPITexture" id="DPITexture_xe8it"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"12\"><path fill=\"#e0e0e0\" d=\"M0 0v12h4v-2H2V2h2V0zm12 0v2h2v8h-2v2h4V0z\"/><path fill=\"#ff4545\" d=\"M6 3.5a3 3 0 0 0 0 6h1v-2H6a1 1 0 0 1 0-2h1v-2z\"/><path fill=\"#80ff45\" d=\"M7 1.5v5a3 3 0 0 0 3 3v-2a1 1 0 0 1-1-1v-5z\"/><path fill=\"#45d7ff\" d=\"M13 3.5a3 3 0 0 0-3 3v3h2v-3a1 1 0 0 1 1-1z\"/></svg>
 "
-base_scale = 2.0
+base_scale = 1.0
 saturation = 2.0
 color_map = {
 Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
@@ -430,10 +430,10 @@ Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
 Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
 }
 
-[sub_resource type="SVGTexture" id="SVGTexture_iycs2"]
+[sub_resource type="DPITexture" id="DPITexture_iycs2"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"12\"><path fill=\"#e0e0e0\" d=\"m0 0v12h4v-2h-2v-8h2v-2zm12 0v2h2v8h-2v2h4v-12z\"/><path fill=\"#ac73f1\" d=\"M8 3h2v2h1v-3h2v8h-2v-3h-3zM3 3v6h2a3 3 0 003-3v-3h-2v3a1 1 0 01-1 1v-4z\"/><path fill=\"#fff\" fill-opacity=\".392\" d=\"M8 3h2v2h1v-3h2v8h-2v-3h-3z\"/></svg>
 "
-base_scale = 2.0
+base_scale = 1.0
 saturation = 2.0
 color_map = {
 Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
@@ -458,10 +458,10 @@ bg_color = Color(0.09068625, 0.09068625, 0.09068625, 1)
 corner_detail = 1
 anti_aliasing = false
 
-[sub_resource type="SVGTexture" id="SVGTexture_o4t5j"]
+[sub_resource type="DPITexture" id="DPITexture_o4t5j"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"#e0e0e0\" d=\"m2 2v2h2v-2zm4 0v2h8v-2zm-4 5v2h2v-2zm4 0v2h8v-2zm-4 5v2h2v-2zm4 0v2h8v-2z\"/></svg>
 "
-base_scale = 2.0
+base_scale = 1.0
 saturation = 2.0
 color_map = {
 Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
@@ -488,10 +488,10 @@ bg_color = Color(0.09068625, 0.09068625, 0.09068625, 1)
 corner_detail = 1
 anti_aliasing = false
 
-[sub_resource type="SVGTexture" id="SVGTexture_chnrs"]
+[sub_resource type="DPITexture" id="DPITexture_chnrs"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><linearGradient id=\"a\"><stop offset=\".25\" stop-color=\"#ffe345\"/><stop offset=\".75\" stop-color=\"#919191\"/></linearGradient><path fill=\"#45d7ff\" d=\"m5.914 4-2 2H9.01V4z\"/><path fill=\"#ff4596\" d=\"M11 4v2h4V4Z\"/><path fill=\"#ff4545\" d=\"M1 8v2h3V8z\"/><path fill=\"url(#a)\" d=\"M6 8v2h7V8z\"/><path fill=\"#919191\" d=\"M1 12v2h5v-2zm7 0v2h6v-2z\"/><path fill=\"#e0e0e0\" d=\"M2 1 1 2l1.5 1.5L1 5l1 1 2.5-2.5z\"/></svg>
 "
-base_scale = 2.0
+base_scale = 1.0
 saturation = 2.0
 color_map = {
 Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
@@ -537,121 +537,121 @@ selected = 0
 fit_to_longest_item = false
 item_count = 39
 popup/item_0/text = "Nil"
-popup/item_0/icon = SubResource("SVGTexture_8wh27")
+popup/item_0/icon = SubResource("DPITexture_8wh27")
 popup/item_0/id = 0
 popup/item_1/text = "bool"
-popup/item_1/icon = SubResource("SVGTexture_6ssdj")
+popup/item_1/icon = SubResource("DPITexture_6ssdj")
 popup/item_1/id = 1
 popup/item_2/text = "int"
-popup/item_2/icon = SubResource("SVGTexture_fj1kj")
+popup/item_2/icon = SubResource("DPITexture_fj1kj")
 popup/item_2/id = 2
 popup/item_3/text = "float"
-popup/item_3/icon = SubResource("SVGTexture_ba3mc")
+popup/item_3/icon = SubResource("DPITexture_ba3mc")
 popup/item_3/id = 3
 popup/item_4/text = "String"
-popup/item_4/icon = SubResource("SVGTexture_6n1lw")
+popup/item_4/icon = SubResource("DPITexture_6n1lw")
 popup/item_4/id = 4
 popup/item_5/text = "Vector2"
-popup/item_5/icon = SubResource("SVGTexture_li14u")
+popup/item_5/icon = SubResource("DPITexture_li14u")
 popup/item_5/id = 5
 popup/item_6/text = "Vector2i"
-popup/item_6/icon = SubResource("SVGTexture_u12x1")
+popup/item_6/icon = SubResource("DPITexture_u12x1")
 popup/item_6/id = 6
 popup/item_7/text = "Rect2"
-popup/item_7/icon = SubResource("SVGTexture_2oyd2")
+popup/item_7/icon = SubResource("DPITexture_2oyd2")
 popup/item_7/id = 7
 popup/item_8/text = "Rect2i"
-popup/item_8/icon = SubResource("SVGTexture_u23o0")
+popup/item_8/icon = SubResource("DPITexture_u23o0")
 popup/item_8/id = 8
 popup/item_9/text = "Vector3"
-popup/item_9/icon = SubResource("SVGTexture_pbmo5")
+popup/item_9/icon = SubResource("DPITexture_pbmo5")
 popup/item_9/id = 9
 popup/item_10/text = "Vector3i"
-popup/item_10/icon = SubResource("SVGTexture_l5m10")
+popup/item_10/icon = SubResource("DPITexture_l5m10")
 popup/item_10/id = 10
 popup/item_11/text = "Transform2D"
-popup/item_11/icon = SubResource("SVGTexture_elrb6")
+popup/item_11/icon = SubResource("DPITexture_elrb6")
 popup/item_11/id = 11
 popup/item_12/text = "Vector4"
-popup/item_12/icon = SubResource("SVGTexture_l1l1e")
+popup/item_12/icon = SubResource("DPITexture_l1l1e")
 popup/item_12/id = 12
 popup/item_13/text = "Vector4i"
-popup/item_13/icon = SubResource("SVGTexture_mjxk3")
+popup/item_13/icon = SubResource("DPITexture_mjxk3")
 popup/item_13/id = 13
 popup/item_14/text = "Plane"
-popup/item_14/icon = SubResource("SVGTexture_gh85k")
+popup/item_14/icon = SubResource("DPITexture_gh85k")
 popup/item_14/id = 14
 popup/item_15/text = "Quaternion"
-popup/item_15/icon = SubResource("SVGTexture_ipjrw")
+popup/item_15/icon = SubResource("DPITexture_ipjrw")
 popup/item_15/id = 15
 popup/item_16/text = "AABB"
-popup/item_16/icon = SubResource("SVGTexture_gajp8")
+popup/item_16/icon = SubResource("DPITexture_gajp8")
 popup/item_16/id = 16
 popup/item_17/text = "Basis"
-popup/item_17/icon = SubResource("SVGTexture_uh0t2")
+popup/item_17/icon = SubResource("DPITexture_uh0t2")
 popup/item_17/id = 17
 popup/item_18/text = "Transform3D"
-popup/item_18/icon = SubResource("SVGTexture_wavv2")
+popup/item_18/icon = SubResource("DPITexture_wavv2")
 popup/item_18/id = 18
 popup/item_19/text = "Projection"
-popup/item_19/icon = SubResource("SVGTexture_p4mb4")
+popup/item_19/icon = SubResource("DPITexture_p4mb4")
 popup/item_19/id = 19
 popup/item_20/text = "Color"
-popup/item_20/icon = SubResource("SVGTexture_4mwly")
+popup/item_20/icon = SubResource("DPITexture_4mwly")
 popup/item_20/id = 20
 popup/item_21/text = "StringName"
-popup/item_21/icon = SubResource("SVGTexture_b7vhv")
+popup/item_21/icon = SubResource("DPITexture_b7vhv")
 popup/item_21/id = 21
 popup/item_22/text = "NodePath"
-popup/item_22/icon = SubResource("SVGTexture_lpnm5")
+popup/item_22/icon = SubResource("DPITexture_lpnm5")
 popup/item_22/id = 22
 popup/item_23/text = "RID"
-popup/item_23/icon = SubResource("SVGTexture_xmqhy")
+popup/item_23/icon = SubResource("DPITexture_xmqhy")
 popup/item_23/id = 23
 popup/item_24/text = "Object"
-popup/item_24/icon = SubResource("SVGTexture_mkovb")
+popup/item_24/icon = SubResource("DPITexture_mkovb")
 popup/item_24/id = 24
 popup/item_25/text = "Callable"
-popup/item_25/icon = SubResource("SVGTexture_0tocu")
+popup/item_25/icon = SubResource("DPITexture_0tocu")
 popup/item_25/id = 25
 popup/item_26/text = "Signal"
-popup/item_26/icon = SubResource("SVGTexture_jak2h")
+popup/item_26/icon = SubResource("DPITexture_jak2h")
 popup/item_26/id = 26
 popup/item_27/text = "Dictionary"
-popup/item_27/icon = SubResource("SVGTexture_tvtkf")
+popup/item_27/icon = SubResource("DPITexture_tvtkf")
 popup/item_27/id = 27
 popup/item_28/text = "Array"
-popup/item_28/icon = SubResource("SVGTexture_b2yqi")
+popup/item_28/icon = SubResource("DPITexture_b2yqi")
 popup/item_28/id = 28
 popup/item_29/text = "PackedByteArray"
-popup/item_29/icon = SubResource("SVGTexture_wxi83")
+popup/item_29/icon = SubResource("DPITexture_wxi83")
 popup/item_29/id = 29
 popup/item_30/text = "PackedInt32Array"
-popup/item_30/icon = SubResource("SVGTexture_gbot3")
+popup/item_30/icon = SubResource("DPITexture_gbot3")
 popup/item_30/id = 30
 popup/item_31/text = "PackedInt64Array"
-popup/item_31/icon = SubResource("SVGTexture_woa4a")
+popup/item_31/icon = SubResource("DPITexture_woa4a")
 popup/item_31/id = 31
 popup/item_32/text = "PackedFloat32Array"
-popup/item_32/icon = SubResource("SVGTexture_w6mls")
+popup/item_32/icon = SubResource("DPITexture_w6mls")
 popup/item_32/id = 32
 popup/item_33/text = "PackedFloat64Array"
-popup/item_33/icon = SubResource("SVGTexture_tiieg")
+popup/item_33/icon = SubResource("DPITexture_tiieg")
 popup/item_33/id = 33
 popup/item_34/text = "PackedStringArray"
-popup/item_34/icon = SubResource("SVGTexture_x0yjr")
+popup/item_34/icon = SubResource("DPITexture_x0yjr")
 popup/item_34/id = 34
 popup/item_35/text = "PackedVector2Array"
-popup/item_35/icon = SubResource("SVGTexture_w6o7t")
+popup/item_35/icon = SubResource("DPITexture_w6o7t")
 popup/item_35/id = 35
 popup/item_36/text = "PackedVector3Array"
-popup/item_36/icon = SubResource("SVGTexture_nmo1t")
+popup/item_36/icon = SubResource("DPITexture_nmo1t")
 popup/item_36/id = 36
 popup/item_37/text = "PackedColorArray"
-popup/item_37/icon = SubResource("SVGTexture_xe8it")
+popup/item_37/icon = SubResource("DPITexture_xe8it")
 popup/item_37/id = 37
 popup/item_38/text = "PackedVector4Array"
-popup/item_38/icon = SubResource("SVGTexture_iycs2")
+popup/item_38/icon = SubResource("DPITexture_iycs2")
 popup/item_38/id = 38
 script = ExtResource("2_6ssdj")
 
@@ -725,7 +725,7 @@ theme_override_constants/separation = 0
 [node name="TextureRect" type="TextureRect" parent="Preview/VBoxContainer/InspectorPreview/InspectorPreviewHeading"]
 layout_mode = 2
 size_flags_horizontal = 8
-texture = SubResource("SVGTexture_o4t5j")
+texture = SubResource("DPITexture_o4t5j")
 expand_mode = 2
 stretch_mode = 3
 
@@ -781,7 +781,7 @@ layout_mode = 2
 [node name="CopyProperty" type="Button" parent="Preview/VBoxContainer/PanelContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 theme_type_variation = &"InspectorActionbutton"
-theme_override_icons/icon = SubResource("SVGTexture_tvtkf")
+theme_override_icons/icon = SubResource("DPITexture_tvtkf")
 text = "Copy Property"
 script = ExtResource("9_u23o0")
 icon_name = "Dictionary"
@@ -789,7 +789,7 @@ icon_name = "Dictionary"
 [node name="CopyCode" type="Button" parent="Preview/VBoxContainer/PanelContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 theme_type_variation = &"InspectorActionbutton"
-theme_override_icons/icon = SubResource("SVGTexture_chnrs")
+theme_override_icons/icon = SubResource("DPITexture_chnrs")
 text = "Copy Editor Property Code"
 script = ExtResource("9_u23o0")
 icon_name = "CodeHighlighter"
