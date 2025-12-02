@@ -10,10 +10,10 @@
 [ext_resource type="PackedScene" uid="uid://r4tamy6tdgsv" path="res://addons/plugin_devtools/src/tools_dock/load_control_into_dock/src/load_control_into_editor.tscn" id="8_bb7lm"]
 [ext_resource type="Texture2D" uid="uid://d173jdavljnfr" path="res://addons/plugin_devtools/src/tools_dock/load_control_into_dock/assets/icons/LoadControlInDock.svg" id="9_4skf5"]
 
-[sub_resource type="SVGTexture" id="SVGTexture_bb7lm"]
+[sub_resource type="DPITexture" id="DPITexture_bb7lm"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"none\" stroke=\"#e0e0e0\" d=\"M2 4h12zm0 4h12zm0 4h12z\"/></svg>
 "
-base_scale = 2.0
+base_scale = 1.0
 saturation = 2.0
 color_map = {
 Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
@@ -56,7 +56,7 @@ metadata/_edit_lock_ = true
 visible = false
 layout_mode = 2
 metadata/_tab_index = 2
-metadata/icon = SubResource("SVGTexture_bb7lm")
+metadata/icon = SubResource("DPITexture_bb7lm")
 
 [node name="Editor Debugger" parent="VBoxContainer/TabContainer" instance=ExtResource("7_4skf5")]
 layout_mode = 2

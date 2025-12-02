@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://bn8g7x356tl3q"]
+[gd_scene load_steps=27 format=3 uid="uid://bn8g7x356tl3q"]
 
 [ext_resource type="Script" uid="uid://drb8020exidda" path="res://addons/plugin_devtools/src/tools_dock/editor_debugger/dock/EditorDebugger.gd" id="1_oq8x1"]
 [ext_resource type="Script" uid="uid://cdci5v0ynrgjk" path="res://addons/plugin_devtools/src/tools_dock/editor_debugger/dock/EditorDebuggerPopupMenu.gd" id="2_hg6cs"]
@@ -7,13 +7,10 @@
 [ext_resource type="Texture2D" uid="uid://bcgmrl12jx076" path="res://addons/plugin_devtools/assets/icons/OnlyShowControlNodes.svg" id="4_gy50x"]
 [ext_resource type="Script" uid="uid://rg8w4yxvrlnp" path="res://addons/plugin_devtools/src/controls/ChangeSplitDirectionButton.gd" id="6_8oa8k"]
 [ext_resource type="Script" uid="uid://cxmrrnymqpble" path="res://addons/plugin_devtools/src/tools_dock/editor_debugger/dock/EditorDebuggerSignalTree.gd" id="6_g3pkk"]
-[ext_resource type="Texture2D" uid="uid://d086ucblbg3fb" path="res://addons/plugin_devtools/assets/icons/HSplitIcon.tres" id="7_fi71u"]
-[ext_resource type="Texture2D" uid="uid://bpqd7nsl66f3p" path="res://addons/plugin_devtools/assets/icons/VSplitIcon.tres" id="8_7q7w5"]
 
-[sub_resource type="SVGTexture" id="SVGTexture_ehoec"]
+[sub_resource type="DPITexture" id="DPITexture_ehoec"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"#e0e0e0\" d=\"M5 8a4 4 0 1 1 4 4v2a6 6 0 1 0-6-6H1l3 4 3-4z\"/></svg>
 "
-base_scale = 2.0
 saturation = 2.0
 color_map = {
 Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
@@ -21,33 +18,27 @@ Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
 Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
 }
 
-[sub_resource type="SVGTexture" id="SVGTexture_hmwju"]
+[sub_resource type="DPITexture" id="DPITexture_tvlfb"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"#e0e0e0\" d=\"m8 9.669-3.536 2.583H7v2.537h2v-2.537h2.536zm0-3.314L4.464 3.772H7V1.235h2v2.537h2.536zm-7.296.73h14.591v1.831H.704z\"/></svg>
 "
-base_scale = 2.0
-saturation = 2.0
 color_map = {
 Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
 Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
 Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
 }
 
-[sub_resource type="SVGTexture" id="SVGTexture_2gxap"]
+[sub_resource type="DPITexture" id="DPITexture_hmwju"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"#e0e0e0\" d=\"m2 2v2h2v-2zm4 0v2h8v-2zm-4 5v2h2v-2zm4 0v2h8v-2zm-4 5v2h2v-2zm4 0v2h8v-2z\"/></svg>
 "
-base_scale = 2.0
-saturation = 2.0
 color_map = {
 Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
 Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
 Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
 }
 
-[sub_resource type="SVGTexture" id="SVGTexture_htm30"]
+[sub_resource type="DPITexture" id="DPITexture_2gxap"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"none\" stroke=\"#8da5f3\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M14 14H2V2h12z\"/></svg>
 "
-base_scale = 2.0
-saturation = 2.0
 color_map = {
 Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
 Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
@@ -63,10 +54,9 @@ func on_node_selected(node: Node) -> void:
 	text = '%s:<%s#%s>' % [node.name, node.get_class(), node.get_instance_id()]
 "
 
-[sub_resource type="SVGTexture" id="SVGTexture_fi71u"]
+[sub_resource type="DPITexture" id="DPITexture_fi71u"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"#e0e0e0\" d=\"M10.168 8.754a5 5 0 1 0-1.414 1.414l4.316 4.316 1.414-1.414zM6 3a3 3 0 0 1 0 6 3 3 0 0 1 0-6z\"/></svg>
 "
-base_scale = 2.0
 saturation = 2.0
 color_map = {
 Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
@@ -74,19 +64,18 @@ Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
 Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
 }
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x7vu6"]
-content_margin_left = 6.0
-content_margin_top = 6.0
-content_margin_right = 6.0
-content_margin_bottom = 6.0
-bg_color = Color(0.09068625, 0.09068625, 0.09068625, 1)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ehoec"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.132, 0.132, 0.132, 1)
 corner_detail = 1
 anti_aliasing = false
 
-[sub_resource type="SVGTexture" id="SVGTexture_k2iu7"]
+[sub_resource type="DPITexture" id="DPITexture_k2iu7"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"#e0e0e0\" d=\"M4 2a1 1 0 0 0 0 2 8 8 0 0 1 8 8 1 1 0 0 0 2 0A10 10 0 0 0 4 2zm0 4a1 1 0 0 0 0 2 4 4 0 0 1 4 4 1 1 0 0 0 2 0 6 6 0 0 0-6-6zm0 4a2 2 0 0 0 0 4 2 2 0 0 0 0-4z\"/></svg>
 "
-base_scale = 2.0
 saturation = 2.0
 color_map = {
 Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
@@ -94,21 +83,27 @@ Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
 Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
 }
 
-[sub_resource type="SVGTexture" id="SVGTexture_23dk1"]
+[sub_resource type="DPITexture" id="DPITexture_23dk1"]
+_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"#e0e0e0\" d=\"M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm0 4h12v4H2zm12 6v4H2v-4z\"/></svg>
+"
+color_map = {
+Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
+Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
+Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
+}
+
+[sub_resource type="DPITexture" id="DPITexture_htm30"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"none\" stroke=\"#e0e0e0\" stroke-width=\"2\" d=\"m3 3 10 10M3 13 13 3\"/></svg>
 "
-base_scale = 2.0
-saturation = 2.0
 color_map = {
 Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
 Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
 Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
 }
 
-[sub_resource type="SVGTexture" id="SVGTexture_7q7w5"]
+[sub_resource type="DPITexture" id="DPITexture_7q7w5"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"#e0e0e0\" d=\"M7.25 4h-2v8h2v-2c1.656 0 3-1.344 3-3 0-1.657-1.344-3-3-3zm0 4v-2c.553 0 1 .448 1 1s-.447 1-1 1zM.25 7v5h2v-2h2v-2h-2v-1c0-.553.447-1 1-1h1v-2h-1c-1.656 0-3 1.344-3 3zM13.25 7c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h2v-2h-2c-1.381 0-2.5 1.119-2.5 2.5s1.119 2.5 2.5 2.5c.276 0 .5.224.5.5s-.224.5-.5.5h-2v2h2c1.381 0 2.5-1.119 2.5-2.5s-1.119-2.5-2.5-2.5z\"/></svg>
 "
-base_scale = 2.0
 saturation = 2.0
 color_map = {
 Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
@@ -133,10 +128,9 @@ func _process(_delta: float) -> void:
 		text = \"%.0f\" % Engine.get_frames_per_second()
 "
 
-[sub_resource type="SVGTexture" id="SVGTexture_hg6cs"]
+[sub_resource type="DPITexture" id="DPITexture_hg6cs"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"#e0e0e0\" d=\"M7 1a5 5 0 0 0-4 5h4zm2 0a5 5 0 0 1 4 5H9zM3 8v2a5 5 0 0 0 10 0V8z\"/></svg>
 "
-base_scale = 2.0
 saturation = 2.0
 color_map = {
 Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
@@ -178,10 +172,9 @@ func set_int(value: int, time: int) -> void:
 	text = \"%d items (%dms)\" % [value, time]
 "
 
-[sub_resource type="SVGTexture" id="SVGTexture_8oa8k"]
+[sub_resource type="DPITexture" id="DPITexture_8oa8k"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><circle cx=\"8\" cy=\"8\" r=\"5\" fill=\"none\" stroke=\"#919191\" stroke-width=\"2\"/></svg>
 "
-base_scale = 2.0
 saturation = 2.0
 color_map = {
 Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
@@ -189,10 +182,9 @@ Color(0.37254903, 1, 0.5921569, 1): Color(0.45, 0.95, 0.5, 1),
 Color(1, 0.8666667, 0.39607844, 1): Color(1, 0.87, 0.4, 1)
 }
 
-[sub_resource type="SVGTexture" id="SVGTexture_4tiqm"]
+[sub_resource type="DPITexture" id="DPITexture_4tiqm"]
 _source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><circle cx=\"8\" cy=\"8\" r=\"5\" fill=\"none\" stroke=\"#e0e0e0\" stroke-width=\"2\"/></svg>
 "
-base_scale = 2.0
 saturation = 2.0
 color_map = {
 Color(1, 0.37254903, 0.37254903, 1): Color(1, 0.47, 0.42, 1),
@@ -225,7 +217,6 @@ metadata/_edit_lock_ = true
 
 [node name="PopupMenu" type="PopupMenu" parent="."]
 auto_translate_mode = 2
-auto_translate = false
 hide_on_item_selection = false
 hide_on_checkable_item_selection = false
 item_count = 3
@@ -250,16 +241,16 @@ layout_mode = 2
 size_flags_horizontal = 0
 tooltip_text = "Reload"
 theme_type_variation = &"InspectorActionButton"
-theme_override_icons/icon = SubResource("SVGTexture_ehoec")
+theme_override_icons/icon = SubResource("DPITexture_ehoec")
 script = ExtResource("3_gy50x")
 button_type = "InspectorActionButton"
-icon_override = SubResource("SVGTexture_ehoec")
+icon_override = SubResource("DPITexture_ehoec")
 
 [node name="CollapseExceptSelected" type="Button" parent="VBoxContainer/Heading"]
 layout_mode = 2
 tooltip_text = "Collapse tree except selected branch"
 theme_type_variation = &"InspectorActionbutton"
-theme_override_icons/icon = SubResource("SVGTexture_hmwju")
+theme_override_icons/icon = SubResource("DPITexture_tvlfb")
 script = ExtResource("3_gy50x")
 icon_name = "CollapseTree"
 
@@ -269,7 +260,7 @@ layout_mode = 2
 size_flags_horizontal = 0
 tooltip_text = "Show in Inspector"
 theme_type_variation = &"InspectorActionButton"
-theme_override_icons/icon = SubResource("SVGTexture_2gxap")
+theme_override_icons/icon = SubResource("DPITexture_hmwju")
 script = ExtResource("3_gy50x")
 icon_name = "FileList"
 button_type = "InspectorActionButton"
@@ -280,7 +271,7 @@ layout_mode = 2
 size_flags_horizontal = 0
 tooltip_text = "Highlight Selected Control Node"
 theme_type_variation = &"InspectorActionButton"
-theme_override_icons/icon = SubResource("SVGTexture_htm30")
+theme_override_icons/icon = SubResource("DPITexture_2gxap")
 button_pressed = true
 script = ExtResource("3_gy50x")
 icon_name = "CollisionShape2D"
@@ -312,7 +303,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 placeholder_text = "Filter Nodes"
 clear_button_enabled = true
-right_icon = SubResource("SVGTexture_fi71u")
+right_icon = SubResource("DPITexture_fi71u")
 
 [node name="OptionButton" type="OptionButton" parent="VBoxContainer/GridContainer"]
 visible = false
@@ -333,13 +324,14 @@ unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme_override_styles/panel = SubResource("StyleBoxFlat_x7vu6")
+theme_override_styles/panel = SubResource("StyleBoxFlat_ehoec")
 allow_rmb_select = true
 script = ExtResource("3_4tiqm")
 updates_per_frame = 100
 wait_between_updates = 0.10000000000582077
 
 [node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/SplitContainer"]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 3
 
@@ -349,7 +341,7 @@ layout_mode = 2
 [node name="TextureRect" type="TextureRect" parent="VBoxContainer/SplitContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 8
-texture = SubResource("SVGTexture_k2iu7")
+texture = SubResource("DPITexture_k2iu7")
 expand_mode = 3
 stretch_mode = 3
 
@@ -364,19 +356,16 @@ layout_mode = 2
 size_flags_horizontal = 8
 tooltip_text = "Change Split Direction"
 theme_type_variation = &"InspectorActionbutton"
-theme_override_icons/icon = ExtResource("8_7q7w5")
+theme_override_icons/icon = SubResource("DPITexture_23dk1")
 script = ExtResource("6_8oa8k")
 split_container = NodePath("../../..")
-hsplit_icon = ExtResource("7_fi71u")
-vsplit_icon = ExtResource("8_7q7w5")
 icon_name = "Panels2"
-icon_override = ExtResource("8_7q7w5")
 
 [node name="CloseButton" type="Button" parent="VBoxContainer/SplitContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 8
 theme_type_variation = &"InspectorActionbutton"
-theme_override_icons/icon = SubResource("SVGTexture_23dk1")
+theme_override_icons/icon = SubResource("DPITexture_htm30")
 script = ExtResource("3_gy50x")
 icon_name = "Close"
 
@@ -394,7 +383,7 @@ layout_mode = 2
 
 [node name="FpsIcon" type="TextureRect" parent="VBoxContainer/BottomPanel"]
 layout_mode = 2
-texture = SubResource("SVGTexture_7q7w5")
+texture = SubResource("DPITexture_7q7w5")
 stretch_mode = 3
 script = SubResource("GDScript_g3pkk")
 
@@ -405,7 +394,7 @@ script = SubResource("GDScript_k2iu7")
 
 [node name="MouseIcon" type="TextureRect" parent="VBoxContainer/BottomPanel"]
 layout_mode = 2
-texture = SubResource("SVGTexture_hg6cs")
+texture = SubResource("DPITexture_hg6cs")
 stretch_mode = 3
 script = SubResource("GDScript_g3pkk")
 
@@ -431,15 +420,14 @@ size_flags_horizontal = 8
 size_flags_vertical = 4
 max_value = 1.0
 step = 0.0010000000038417
-value = 0.38000000145984597
+value = 0.380000001459846
 fill_mode = 4
-texture_under = SubResource("SVGTexture_8oa8k")
-texture_progress = SubResource("SVGTexture_4tiqm")
+texture_under = SubResource("DPITexture_8oa8k")
+texture_progress = SubResource("DPITexture_4tiqm")
 script = SubResource("GDScript_gy50x")
 
 [node name="SaveBranchFileDialog" type="FileDialog" parent="."]
 auto_translate_mode = 2
-auto_translate = false
 filters = PackedStringArray("*.tscn ; TSCN", "*.scn ; SCN", "*.res ; RES")
 
 [connection signal="node_selected" from="." to="VBoxContainer/Heading/NodeNameLabel" method="on_node_selected"]

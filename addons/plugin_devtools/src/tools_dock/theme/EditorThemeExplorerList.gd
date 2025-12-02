@@ -1,5 +1,5 @@
 @tool
-abstract extends Container
+@abstract extends Container
 
 const H := preload("uid://bn7ppltfkj17y")
 
