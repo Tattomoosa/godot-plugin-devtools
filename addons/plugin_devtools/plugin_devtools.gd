@@ -9,6 +9,8 @@ var dock_popup : Popup
 var add_to_bottom_button : Button
 var _docks : Dictionary[DockSlot, Control] = {}
 
+var editor_dock #:EditorDock un-typed for back compat
+
 func _enable_plugin() -> void:
 	# Add autoloads here.
 	pass
@@ -20,7 +22,17 @@ func _disable_plugin() -> void:
 func _enter_tree() -> void:
 	name = "PluginDevTools"
 	tools_dock = tools_dock_scene.instantiate()
-	add_control_to_bottom_panel(tools_dock, "Plugin DevTools")
+	
+	var version = Engine.get_version_info()
+	if version.minor < 6:
+		add_control_to_bottom_panel(tools_dock, "Plugin DevTools")
+	else:
+		editor_dock = ClassDB.instantiate("EditorDock")
+		editor_dock.available_layouts = editor_dock.DOCK_LAYOUT_ALL
+		editor_dock.default_slot = editor_dock.DOCK_SLOT_BOTTOM
+		editor_dock.dock_icon = plugin_icon
+		editor_dock.add_child(tools_dock)
+		call("add_dock", editor_dock)
 
 	# set_dock_tab_icon(tools_dock, plugin_icon)
 	# var tc : TabContainer = tools_dock.get_parent()
@@ -29,8 +41,12 @@ func _enter_tree() -> void:
 	# tools_dock.get_child(0).get_child(0).set_popup(popup)
 
 func _exit_tree() -> void:
-	# remove_control_from_docks(tools_dock)
-	remove_control_from_bottom_panel(tools_dock)
+	var version = Engine.get_version_info()
+	if version.minor < 6:
+		remove_control_from_bottom_panel(tools_dock)
+	else:
+		call("remove_dock", editor_dock)
+		editor_dock.queue_free()
 	tools_dock.queue_free()
 
 func _add_bottom_panel_button_to_popup() -> void:
