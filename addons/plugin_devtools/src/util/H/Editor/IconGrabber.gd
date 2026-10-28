@@ -18,7 +18,7 @@ static var icon_list := {}
 static var finish := false
 
 # Get icon
-static func _get_icon(p_class:String) -> ImageTexture:
+static func _get_icon(p_class:String) -> Texture2D:
 	if !icon_list:
 		icon_list = {}
 	if p_class in icon_list:
@@ -89,9 +89,6 @@ static func _grab_gdextension_icon(from_item:TreeItem):
 			# Get GDExtension icons only
 			if ClassDB.class_exists(c_name) and ClassDB.class_get_api_type(c_name) == ClassDB.APIType.API_EXTENSION:
 				var icon = item.get_icon(0)
-				
-				if icon is CompressedTexture2D:
-					icon = ImageTexture.create_from_image(icon.get_image())
 				icon_list[c_name] = icon
 			
 			# Go deeper into the tree
