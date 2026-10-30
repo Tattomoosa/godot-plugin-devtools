@@ -50,7 +50,6 @@ script/source = "@tool
 extends Label
 
 func on_node_selected(node: Node) -> void:
-	print(node)
 	text = '%s:<%s#%s>' % [node.name, node.get_class(), node.get_instance_id()]
 "
 

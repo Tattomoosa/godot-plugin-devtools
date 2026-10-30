@@ -125,6 +125,8 @@ func _update_branch(root_node: Node, root_item: TreeItem) -> void:
 
 	var non_internal_children := root_node.get_children()	
 	for i in root_node.get_child_count(true):
+		if i >= root_node.get_child_count(true):
+			continue # child count changes due to async
 		var child := root_node.get_child(i, true)
 		if !child or !is_instance_valid(child):
 			continue
